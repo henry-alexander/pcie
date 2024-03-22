@@ -1,0 +1,18 @@
+# system info resetIP on 2024.03.21.07:49:12
+system_info:
+name,value
+DEVICE,A5ED065BB32AE4S
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for resetIP on 2024.03.21.07:49:12
+files:
+filepath,kind,attributes,module,is_top
+sim/resetIP.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,resetIP,true
+altera_s10_user_rst_clkgate_1947/sim/altera_s10_user_rst_clkgate.sv,SYSTEM_VERILOG,,altera_s10_user_rst_clkgate,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+resetIP.resetIP,altera_s10_user_rst_clkgate

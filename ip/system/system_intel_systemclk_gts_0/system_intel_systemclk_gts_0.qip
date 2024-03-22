@@ -1,0 +1,60 @@
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_TOOL_VERSION "23.4.1"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_TOP_LEVEL_COMPONENT_NAME "intel_systemclk_gts"
+set_global_assignment -library "system_intel_systemclk_gts_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "system_intel_systemclk_gts_0.sopcinfo"]
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name SLD_INFO "QSYS_NAME system_intel_systemclk_gts_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "system_intel_systemclk_gts_0" -name MISC_FILE [file join $::quartus(qip_path) "system_intel_systemclk_gts_0.cmp"]
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_TARGETED_DEVICE_FAMILY "Agilex 5"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_GENERATED_DEVICE_FAMILY "{Agilex 5}"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "system_intel_systemclk_gts_0" -name MISC_FILE [file join $::quartus(qip_path) "../system_intel_systemclk_gts_0.ip"]
+
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_NAME "c3lzdGVtX2ludGVsX3N5c3RlbWNsa19ndHNfMF9zcGxsX2hhbF8yMTAwX2xuZmZ5ZmE="
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_DISPLAY_NAME "U00gRXRoZXJuZXQgU1BMTCBIQUwgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_INTERNAL "On"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_VERSION "MjEuMC4w"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_DESCRIPTION "SEFM"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9FdGhlcm5ldA=="
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq" -library "intel_systemclk_gts_200" -name IP_COMPONENT_NAME "c3lzdGVtX2ludGVsX3N5c3RlbWNsa19ndHNfMF9pbnRlbF9zeXN0ZW1jbGtfZ3RzX3NwbGxfaGFsXzIwMF94ZWF1Y3dx"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq" -library "intel_systemclk_gts_200" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVtX2ludGVsX3N5c3RlbWNsa19ndHNfMF9pbnRlbF9zeXN0ZW1jbGtfZ3RzX3NwbGxfaGFsXzIwMF94ZWF1Y3dx"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq" -library "intel_systemclk_gts_200" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq" -library "intel_systemclk_gts_200" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq" -library "intel_systemclk_gts_200" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq" -library "intel_systemclk_gts_200" -name IP_COMPONENT_VERSION "Mi4wLjA="
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_NAME "c3lzdGVtX2ludGVsX3N5c3RlbWNsa19ndHNfMF9pbnRlbF9zeXN0ZW1jbGtfZ3RzXzIwMF9tbDYydTVp"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_DISPLAY_NAME "R1RTIFN5c3RlbSBQTEwgQ2xvY2tzIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_VERSION "Mi4wLjA="
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_DESCRIPTION "R1RTIFN5c3RlbSBQTEwgQ2xvY2tzIEludGVsIEZQR0EgSVA="
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_COMPONENT_GROUP "SW50ZXJmYWNlIFByb3RvY29scy9UcmFuc2NlaXZlciBQSFk="
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_COMPONENT_NAME "c3lzdGVtX2ludGVsX3N5c3RlbWNsa19ndHNfMA=="
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "system_intel_systemclk_gts_0" -library "system_intel_systemclk_gts_0" -name IP_COMPONENT_VERSION "MS4w"
+
+set_instance_assignment -name QUICK_ELAB_TILE_IP_PROPERTY {{"SYSTEM_CLK_IP" : "yes", "NO_DR" : "yes" }} -entity system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa
+set_instance_assignment -name QUICK_ELAB_TILE_IP_PROPERTY {{"SYSTEM_CLK_IP" : "yes", "NO_DR" : "yes" }} -entity system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i
+
+set_global_assignment -library "spll_hal_2100" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "spll_hal_2100/synth/spll_hal_top.sv"]
+set_global_assignment -library "spll_hal_2100" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "spll_hal_2100/synth/system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa.sv"]
+set_global_assignment -library "intel_systemclk_gts_200" -name VERILOG_FILE [file join $::quartus(qip_path) "intel_systemclk_gts_200/synth/system_intel_systemclk_gts_0_intel_systemclk_gts_spll_hal_200_xeaucwq.v"]
+set_global_assignment -library "intel_systemclk_gts_200" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "intel_systemclk_gts_200/synth/system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i.sv"]
+set_global_assignment -library "system_intel_systemclk_gts_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/system_intel_systemclk_gts_0.v"]
+
+
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_TOOL_NAME "intel_systemclk_gts"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_TOOL_VERSION "2.0.0"
+set_global_assignment -entity "system_intel_systemclk_gts_0_intel_systemclk_gts_200_ml62u5i" -library "intel_systemclk_gts_200" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_TOOL_NAME "spll_hal"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_TOOL_VERSION "21.0.0"
+set_global_assignment -entity "system_intel_systemclk_gts_0_spll_hal_2100_lnffyfa" -library "spll_hal_2100" -name IP_TOOL_ENV "QsysPrimePro"
+

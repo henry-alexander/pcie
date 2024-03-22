@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_1931/sim/pcie_ed_iopll0_altera_iopll_1931_klgmlua.vo"
+   type="VERILOG"
+   library="altera_iopll_1931" />
+ <file
+   path="sim/pcie_ed_iopll0.v"
+   type="VERILOG"
+   library="pcie_ed_iopll0"
+   hasInlineConfiguration="true" />
+ <topLevel name="pcie_ed_iopll0.pcie_ed_iopll0" />
+ <deviceFamily name="agilex5" />
+ <device name="A5ED065BB32AE4SR0" />
+</simPackage>

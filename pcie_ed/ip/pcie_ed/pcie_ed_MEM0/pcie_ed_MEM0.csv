@@ -1,0 +1,19 @@
+# system info pcie_ed_MEM0 on 2024.03.20.07:24:39
+system_info:
+name,value
+DEVICE,A5ED065BB32AE4SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for pcie_ed_MEM0 on 2024.03.20.07:24:39
+files:
+filepath,kind,attributes,module,is_top
+sim/pcie_ed_MEM0.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,pcie_ed_MEM0,true
+intel_onchip_memory_147/sim/pcie_ed_MEM0_intel_onchip_memory_147_cp2b3ba.sv,SYSTEM_VERILOG,,pcie_ed_MEM0_intel_onchip_memory_147_cp2b3ba,false
+intel_onchip_memory_147/sim/pcie_ed_MEM0_MEM0.hex,HEX,,pcie_ed_MEM0_intel_onchip_memory_147_cp2b3ba,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+pcie_ed_MEM0.MEM0,pcie_ed_MEM0_intel_onchip_memory_147_cp2b3ba

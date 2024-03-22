@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="intel_srcss_gts_200/sim/system_intel_srcss_gts_0_intel_srcss_gts_200_bg3co7q.sv"
+   type="SYSTEM_VERILOG"
+   library="intel_srcss_gts_200" />
+ <file
+   path="intel_srcss_gts_200/sim/system_intel_srcss_gts_0_intel_srcss_gts_200_bg3co7q.sdc"
+   type="SDC_ENTITY"
+   library="intel_srcss_gts_200" />
+ <file
+   path="intel_srcss_gts_200/sim/intelfpga/intel_srcss_gts.sv"
+   type="SYSTEM_VERILOG"
+   library="intel_srcss_gts_200" />
+ <file
+   path="intel_srcss_gts_200/sim/intelfpga/intel_ss_synchronizers.sv"
+   type="SYSTEM_VERILOG"
+   library="intel_srcss_gts_200" />
+ <file
+   path="intel_srcss_gts_200/sim/intelfpga/sopc_synchronizer.v"
+   type="VERILOG"
+   library="intel_srcss_gts_200" />
+ <file
+   path="sim/system_intel_srcss_gts_0.v"
+   type="VERILOG"
+   library="system_intel_srcss_gts_0"
+   hasInlineConfiguration="true" />
+ <topLevel name="system_intel_srcss_gts_0.system_intel_srcss_gts_0" />
+ <deviceFamily name="agilex5" />
+ <device name="A5ED065BB32AE4S" />
+</simPackage>

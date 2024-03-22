@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="intel_onchip_memory_147/sim/pcie_ed_MEM0_intel_onchip_memory_147_cp2b3ba.sv"
+   type="SYSTEM_VERILOG"
+   library="intel_onchip_memory_147" />
+ <file
+   path="intel_onchip_memory_147/sim/pcie_ed_MEM0_MEM0.hex"
+   type="HEX"
+   library="intel_onchip_memory_147" />
+ <file
+   path="sim/pcie_ed_MEM0.v"
+   type="VERILOG"
+   library="pcie_ed_MEM0"
+   hasInlineConfiguration="true" />
+ <topLevel name="pcie_ed_MEM0.pcie_ed_MEM0" />
+ <deviceFamily name="agilex5" />
+ <device name="A5ED065BB32AE4SR0" />
+ <modelMap controllerPath="pcie_ed_MEM0.MEM0" modelPath="pcie_ed_MEM0.MEM0" />
+</simPackage>

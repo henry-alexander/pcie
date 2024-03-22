@@ -1,0 +1,26 @@
+	component pcie_ed is
+		port (
+			pin_perst_n_reset_n     : in  std_logic := 'X'; -- reset_n
+			i_gpio_perst0_n_reset_n : in  std_logic := 'X'; -- reset_n
+			hip_serial_rx_n_in0     : in  std_logic := 'X'; -- rx_n_in0
+			hip_serial_rx_n_in1     : in  std_logic := 'X'; -- rx_n_in1
+			hip_serial_rx_n_in2     : in  std_logic := 'X'; -- rx_n_in2
+			hip_serial_rx_n_in3     : in  std_logic := 'X'; -- rx_n_in3
+			hip_serial_rx_p_in0     : in  std_logic := 'X'; -- rx_p_in0
+			hip_serial_rx_p_in1     : in  std_logic := 'X'; -- rx_p_in1
+			hip_serial_rx_p_in2     : in  std_logic := 'X'; -- rx_p_in2
+			hip_serial_rx_p_in3     : in  std_logic := 'X'; -- rx_p_in3
+			hip_serial_tx_n_out0    : out std_logic;        -- tx_n_out0
+			hip_serial_tx_n_out1    : out std_logic;        -- tx_n_out1
+			hip_serial_tx_n_out2    : out std_logic;        -- tx_n_out2
+			hip_serial_tx_n_out3    : out std_logic;        -- tx_n_out3
+			hip_serial_tx_p_out0    : out std_logic;        -- tx_p_out0
+			hip_serial_tx_p_out1    : out std_logic;        -- tx_p_out1
+			hip_serial_tx_p_out2    : out std_logic;        -- tx_p_out2
+			hip_serial_tx_p_out3    : out std_logic;        -- tx_p_out3
+			refclk0_clk             : in  std_logic := 'X'; -- clk
+			refclk_clk              : in  std_logic := 'X'; -- clk
+			refclk_xcvr_clk         : in  std_logic := 'X'  -- clk
+		);
+	end component pcie_ed;
+

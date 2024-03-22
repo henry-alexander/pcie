@@ -1,0 +1,22 @@
+# system info pcie_ed_srcssIP on 2024.03.20.07:24:42
+system_info:
+name,value
+DEVICE,A5ED065BB32AE4SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for pcie_ed_srcssIP on 2024.03.20.07:24:42
+files:
+filepath,kind,attributes,module,is_top
+sim/pcie_ed_srcssIP.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,pcie_ed_srcssIP,true
+intel_srcss_gts_200/sim/pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q.sv,SYSTEM_VERILOG,,pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q,false
+intel_srcss_gts_200/sim/pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q.sdc,SDC_ENTITY,NO_SDC_PROMOTION,pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q,false
+intel_srcss_gts_200/sim/intelfpga/intel_srcss_gts.sv,SYSTEM_VERILOG,,pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q,false
+intel_srcss_gts_200/sim/intelfpga/intel_ss_synchronizers.sv,SYSTEM_VERILOG,,pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q,false
+intel_srcss_gts_200/sim/intelfpga/sopc_synchronizer.v,VERILOG,,pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+pcie_ed_srcssIP.srcssIP,pcie_ed_srcssIP_intel_srcss_gts_200_bg3co7q

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="spll_hal_2100/sim/spll_hal_top.sv"
+   type="SYSTEM_VERILOG"
+   library="spll_hal_2100" />
+ <file
+   path="spll_hal_2100/sim/syspll_spll_hal_2100_dlmglry.sv"
+   type="SYSTEM_VERILOG"
+   library="spll_hal_2100" />
+ <file
+   path="intel_systemclk_gts_200/sim/syspll_intel_systemclk_gts_spll_hal_200_cc5u5ly.v"
+   type="VERILOG"
+   library="intel_systemclk_gts_200"
+   hasInlineConfiguration="true" />
+ <file
+   path="intel_systemclk_gts_200/sim/syspll_intel_systemclk_gts_200_eathmmq.sv"
+   type="SYSTEM_VERILOG"
+   library="intel_systemclk_gts_200" />
+ <file
+   path="sim/syspll.v"
+   type="VERILOG"
+   library="syspll"
+   hasInlineConfiguration="true" />
+ <elaborationOptions
+   platform="LINUX64"
+   simulator="modelsim"
+   value="  -voptargs=+acc -voptargs=-noprotectopt -suppress 7063\,7061\,3009\,3053\,12003\,8630\,12023\,8604\,3839\,7033 -nocvg" />
+ <elaborationOptions
+   platform="LINUX64"
+   simulator="vcs"
+   value=" $QUARTUS_INSTALL_DIR/eda/sim_lib/quartus_dpi.c -debug_access+f +define+QUARTUS_ENABLE_DPI_FORCE" />
+ <elaborationOptions
+   platform="LINUX64"
+   simulator="vcsmx"
+   value=" $QUARTUS_INSTALL_DIR/eda/sim_lib/quartus_dpi.c -debug_access+f" />
+ <elaborationOptions
+   platform="WINDOWS64"
+   simulator="modelsim"
+   value="  -voptargs=+acc -voptargs=-noprotectopt -suppress 7063\,7061\,3009\,3053\,12003\,8630\,12023\,8604\,3839\,7033 -nocvg" />
+ <topLevel name="syspll.syspll" />
+ <deviceFamily name="agilex5" />
+ <device name="A5ED065BB32AE4SR0" />
+</simPackage>

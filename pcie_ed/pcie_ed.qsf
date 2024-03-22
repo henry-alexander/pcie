@@ -1,0 +1,63 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2024  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the Intel FPGA Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 23.4.1 Build 205 02/08/2024 SC Pro Edition
+# Date created = 07:24:01  March 20, 2024
+#
+# -------------------------------------------------------------------------- #
+set_global_assignment -name TOP_LEVEL_ENTITY pcie_ed
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.4.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:24:01  MARCH 20, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.4.1 Pro Edition"
+set_global_assignment -name FAMILY "Agilex 5"
+set_global_assignment -name DEVICE A5ED065BB32AE4SR0
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_dut.ip
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_resetIP.ip
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_syspll.ip
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_srcssIP.ip
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_pio0.ip
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_iopll0.ip
+set_global_assignment -name IP_FILE ip/pcie_ed/pcie_ed_MEM0.ip
+set_global_assignment -name QSYS_FILE pcie_ed.qsys
+set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
+set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-12"
+set_global_assignment -name MESSAGE_DISABLE 14320 -entity pcie_ed
+set_global_assignment -name SDC_FILE sm_pciess_ed.sdc.terp
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_MEM0/pcie_ed_MEM0.spd
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_pio0/pcie_ed_pio0.spd
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_iopll0/pcie_ed_iopll0.spd
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_srcssIP/pcie_ed_srcssIP.spd
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_resetIP/pcie_ed_resetIP.spd
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_syspll/pcie_ed_syspll.spd
+set_global_assignment -name SPD_FILE ./ip/pcie_ed/pcie_ed_dut/pcie_ed_dut.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_rp/ip/pcie_top/sm/sm.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_rp/pcie_top/pcie_top.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_rp/ip/pcie_top/syspll/syspll.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_rp/ip/pcie_top/srcssIP/srcssIP.spd
+set_global_assignment -name SPD_FILE ./pcie_ed/pcie_ed.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/ip/pcie_ed_tb/dut_pcie_tb_ip/dut_pcie_tb_ip.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/ip/pcie_ed_tb/pcie_ed_inst_refclk0_bfm_ip/pcie_ed_inst_refclk0_bfm_ip.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/ip/pcie_ed_tb/pcie_ed_inst_refclk_xcvr_bfm_ip/pcie_ed_inst_refclk_xcvr_bfm_ip.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/ip/pcie_ed_tb/pcie_ed_inst_pin_perst_n_bfm_ip/pcie_ed_inst_pin_perst_n_bfm_ip.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/ip/pcie_ed_tb/pcie_ed_inst_i_gpio_perst0_n_bfm_ip/pcie_ed_inst_i_gpio_perst0_n_bfm_ip.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/ip/pcie_ed_tb/pcie_ed_inst_refclk_bfm_ip/pcie_ed_inst_refclk_bfm_ip.spd
+set_global_assignment -name SPD_FILE ./pcie_ed_tb/pcie_ed_tb/pcie_ed_tb.spd
+set_instance_assignment -name IO_STANDARD "1.8V LVCMOS" -to pin_perst_n_reset_n
+set_global_assignment -name BOARD default

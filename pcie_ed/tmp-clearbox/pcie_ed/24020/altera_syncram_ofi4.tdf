@@ -1,0 +1,53 @@
+--altera_syncram ACF_BLOCK_RAM_AND_MLAB_EQUIVALENT_PAUSED_READ_CAPABILITIES="CARE" ADDRESS_ACLR_A="NONE" ADDRESS_ACLR_B="NONE" ADDRESS_REG_B="CLOCK0" BYTEENA_REG_B="CLOCK0" CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" CLOCK_ENABLE_CORE_A="BYPASS" CLOCK_ENABLE_CORE_B="BYPASS" CLOCK_ENABLE_INPUT_A="BYPASS" CLOCK_ENABLE_INPUT_B="BYPASS" CLOCK_ENABLE_OUTPUT_A="BYPASS" CLOCK_ENABLE_OUTPUT_B="BYPASS" DEVICE_FAMILY="Agilex 5" INDATA_REG_B="CLOCK0" INIT_FILE="ip/pcie_ed/pcie_ed_dut/intel_pcie_gts_300/synth/pcie_ss/mif/pcie_ss_p0_ctrl_shadow_pf_ram_reset.mif" LOW_POWER_MODE="AUTO" NUMWORDS_A=8 NUMWORDS_B=8 OPERATION_MODE="DUAL_PORT" OPTIMIZATION_OPTION="AUTO" OUTDATA_ACLR_A="NONE" OUTDATA_ACLR_B="CLEAR0" OUTDATA_REG_A="CLOCK0" OUTDATA_REG_B="CLOCK0" RAM_BLOCK_TYPE="M20K" RDCONTROL_REG_B="CLOCK0" READ_DURING_WRITE_MODE_MIXED_PORTS="OLD_DATA" READ_DURING_WRITE_MODE_PORT_B="OLD_DATA" WIDTH_A=22 WIDTH_B=22 WIDTH_BYTEENA_A=1 WIDTH_BYTEENA_B=1 WIDTHAD2_A=3 WIDTHAD2_B=3 WIDTHAD_A=3 WIDTHAD_B=3 aclr0 address_a address_b clock0 data_a data_b q_b rden_a rden_b wren_a CARRY_CHAIN="MANUAL" CYCLONEII_M4K_COMPATIBILITY="ON"
+--VERSION_BEGIN 23.4 cbx_altera_syncram 2023:12:13:21:31:54:SC cbx_altera_syncram_ltm 2023:12:13:21:31:54:SC cbx_altera_syncram_nd_impl 2023:12:13:21:31:59:SC cbx_altsyncram 2023:12:13:21:31:54:SC cbx_libertymesa 2023:12:13:21:31:55:SC cbx_lpm_add_sub 2023:12:13:21:31:55:SC cbx_lpm_compare 2023:12:13:21:31:59:SC cbx_lpm_decode 2023:12:13:21:31:54:SC cbx_lpm_mux 2023:12:13:21:31:59:SC cbx_mgl 2023:12:13:21:32:06:SC cbx_nadder 2023:12:13:21:31:55:SC cbx_stratix 2023:12:13:21:31:59:SC cbx_stratixii 2023:12:13:21:31:59:SC cbx_stratixiii 2023:12:13:21:31:59:SC cbx_stratixv 2023:12:13:21:31:55:SC cbx_util_mgl 2023:12:13:21:31:59:SC  VERSION_END
+
+
+-- Copyright (C) 2024  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and any partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel FPGA IP License Agreement, or other applicable license
+--  agreement, including, without limitation, that your use is for
+--  the sole purpose of programming logic devices manufactured by
+--  Intel and sold by Intel or its authorized distributors.  Please
+--  refer to the Intel FPGA Software License Subscription Agreements 
+--  on the Quartus Prime software download page.
+
+
+FUNCTION altera_syncram_impl_9rjd1 (aclr0, address_a[2..0], address_b[2..0], clock0, data_a[21..0], data_b[21..0], rden_a, rden_b, wren_a)
+RETURNS ( q_b[21..0]);
+
+--synthesis_resources = M20K 1 
+SUBDESIGN altera_syncram_ofi4
+( 
+	aclr0	:	input;
+	address_a[2..0]	:	input;
+	address_b[2..0]	:	input;
+	clock0	:	input;
+	data_a[21..0]	:	input;
+	data_b[21..0]	:	input;
+	q_b[21..0]	:	output;
+	rden_a	:	input;
+	rden_b	:	input;
+	wren_a	:	input;
+) 
+VARIABLE 
+	altera_syncram_impl1 : altera_syncram_impl_9rjd1;
+
+BEGIN 
+	altera_syncram_impl1.aclr0 = aclr0;
+	altera_syncram_impl1.address_a[] = address_a[];
+	altera_syncram_impl1.address_b[] = address_b[];
+	altera_syncram_impl1.clock0 = clock0;
+	altera_syncram_impl1.data_a[] = data_a[];
+	altera_syncram_impl1.data_b[] = data_b[];
+	altera_syncram_impl1.rden_a = rden_a;
+	altera_syncram_impl1.rden_b = rden_b;
+	altera_syncram_impl1.wren_a = wren_a;
+	q_b[] = altera_syncram_impl1.q_b[];
+END;
+--VALID FILE

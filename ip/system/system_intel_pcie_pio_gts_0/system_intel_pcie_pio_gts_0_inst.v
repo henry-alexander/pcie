@@ -1,0 +1,47 @@
+	system_intel_pcie_pio_gts_0 u0 (
+		.Clk_i                        (_connected_to_Clk_i_),                        //   input,    width = 1,                   axi_st_clk.clk
+		.outclk_0                     (_connected_to_outclk_0_),                     //   input,    width = 1,                 axi_lite_clk.clk
+		.coreclkout_hip               (_connected_to_coreclkout_hip_),               //   input,    width = 1,                          clk.clk
+		.Rstn_i                       (_connected_to_Rstn_i_),                       //   input,    width = 1,                        reset.reset_n
+		.pio_clk                      (_connected_to_pio_clk_),                      //  output,    width = 1,               pio_master_clk.clk
+		.pio_rst_n                    (_connected_to_pio_rst_n_),                    //  output,    width = 1,             pio_master_reset.reset_n
+		.pio_axi_st_areset_n          (_connected_to_pio_axi_st_areset_n_),          //  output,    width = 1,          pio_axi_st_areset_n.reset_n
+		.pio_axi_lite_areset_n        (_connected_to_pio_axi_lite_areset_n_),        //  output,    width = 1,        pio_axi_lite_areset_n.reset_n
+		.pio_subsystem_cold_rst_n     (_connected_to_pio_subsystem_cold_rst_n_),     //  output,    width = 1,     pio_subsystem_cold_rst_n.reset_n
+		.pio_subsystem_warm_rst_n     (_connected_to_pio_subsystem_warm_rst_n_),     //  output,    width = 1,     pio_subsystem_warm_rst_n.reset_n
+		.ninit_done                   (_connected_to_ninit_done_),                   //   input,    width = 1,                   ninit_done.reset
+		.pio_subsystem_cold_rst_ack_n (_connected_to_pio_subsystem_cold_rst_ack_n_), //   input,    width = 1, pio_subsystem_cold_rst_ack_n.subsystem_cold_rst_ack_n
+		.pio_subsystem_warm_rst_ack_n (_connected_to_pio_subsystem_warm_rst_ack_n_), //   input,    width = 1, pio_subsystem_warm_rst_ack_n.subsystem_warm_rst_ack_n
+		.pio_initiate_warmrst_req     (_connected_to_pio_initiate_warmrst_req_),     //   input,    width = 1,     pio_initiate_warmrst_req.initiate_warmrst_req
+		.pio_subsystem_rst_rdy        (_connected_to_pio_subsystem_rst_rdy_),        //   input,    width = 1,        pio_subsystem_rst_rdy.subsystem_rst_rdy
+		.pio_subsystem_rst_req        (_connected_to_pio_subsystem_rst_req_),        //  output,    width = 1,        pio_subsystem_rst_req.subsystem_rst_req
+		.pio_initiate_rst_req_rdy     (_connected_to_pio_initiate_rst_req_rdy_),     //  output,    width = 1,     pio_initiate_rst_req_rdy.initiate_rst_req_rdy
+		.pio_pll_locked               (_connected_to_pio_pll_locked_),               //   input,    width = 1,               pio_pll_locked.export
+		.pio_address_o                (_connected_to_pio_address_o_),                //  output,   width = 64,                   pio_master.address
+		.pio_read_o                   (_connected_to_pio_read_o_),                   //  output,    width = 1,                             .read
+		.pio_readdata_i               (_connected_to_pio_readdata_i_),               //   input,  width = 512,                             .readdata
+		.pio_readdatavalid_i          (_connected_to_pio_readdatavalid_i_),          //   input,    width = 1,                             .readdatavalid
+		.pio_write_o                  (_connected_to_pio_write_o_),                  //  output,    width = 1,                             .write
+		.pio_writedata_o              (_connected_to_pio_writedata_o_),              //  output,  width = 512,                             .writedata
+		.pio_waitrequest_i            (_connected_to_pio_waitrequest_i_),            //   input,    width = 1,                             .waitrequest
+		.pio_byteenable_o             (_connected_to_pio_byteenable_o_),             //  output,   width = 64,                             .byteenable
+		.pio_response_i               (_connected_to_pio_response_i_),               //   input,    width = 2,                             .response
+		.pio_burstcount_o             (_connected_to_pio_burstcount_o_),             //  output,    width = 4,                             .burstcount
+		.pio_rx_tvalid_i              (_connected_to_pio_rx_tvalid_i_),              //   input,    width = 1,                       rx_pio.tvalid
+		.pio_rx_tready_o              (_connected_to_pio_rx_tready_o_),              //  output,    width = 1,                             .tready
+		.pio_rx_tdata_i               (_connected_to_pio_rx_tdata_i_),               //   input,  width = 256,                             .tdata
+		.pio_rx_tkeep_i               (_connected_to_pio_rx_tkeep_i_),               //   input,   width = 32,                             .tkeep
+		.pio_rx_tlast_i               (_connected_to_pio_rx_tlast_i_),               //   input,    width = 1,                             .tlast
+		.pio_tx_tvalid_o              (_connected_to_pio_tx_tvalid_o_),              //  output,    width = 1,                       tx_pio.tvalid
+		.pio_tx_tready_i              (_connected_to_pio_tx_tready_i_),              //   input,    width = 1,                             .tready
+		.pio_tx_tdata_o               (_connected_to_pio_tx_tdata_o_),               //  output,  width = 256,                             .tdata
+		.pio_tx_tkeep_o               (_connected_to_pio_tx_tkeep_o_),               //  output,   width = 32,                             .tkeep
+		.pio_tx_tlast_o               (_connected_to_pio_tx_tlast_o_),               //  output,    width = 1,                             .tlast
+		.pio_txcrdt_tvalid            (_connected_to_pio_txcrdt_tvalid_),            //   input,    width = 1,                  tx_crdt_pio.tvalid
+		.pio_txcrdt_tdata             (_connected_to_pio_txcrdt_tdata_),             //   input,   width = 19,                             .tdata
+		.pio_ctrlshadow_tvalid_i      (_connected_to_pio_ctrlshadow_tvalid_i_),      //   input,    width = 1,               ctrlshadow_pio.tvalid
+		.pio_ctrlshadow_tdata_i       (_connected_to_pio_ctrlshadow_tdata_i_),       //   input,   width = 40,                             .tdata
+		.pio_cplto_tvalid_i           (_connected_to_pio_cplto_tvalid_i_),           //   input,    width = 1,                    cplto_pio.tvalid
+		.pio_cplto_tdata_i            (_connected_to_pio_cplto_tdata_i_)             //   input,   width = 30,                             .tdata
+	);
+

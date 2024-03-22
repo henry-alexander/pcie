@@ -1,0 +1,264 @@
+Fitter Retime Stage Report for pcie_example
+Thu Mar 21 08:01:57 2024
+Quartus Prime Version 23.4.1 Build 205 02/08/2024 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Hyper-Retimer Settings
+  3. Reset Sequence Requirement
+  4. Retiming Limit Summary
+  5. Critical Chain Summary for Transfer from internal_clk to u0|iopll0|iopll_0_outclk1
+  6. Clock Domain u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+  7. Clock Domain u0|iopll0|iopll_0_outclk1 (Meets timing requirements: No further analysis performed.)
+  8. Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|iopll0|iopll_0_outclk1 (Meets timing requirements: No further analysis performed.)
+  9. Transfer from u0|dut|intel_pcie_gts_0_avmm_clock0 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+ 10. Clock Domain u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 (Meets timing requirements: No further analysis performed.)
+ 11. Transfer from u0|iopll0|iopll_0_outclk1 to u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 (Meets timing requirements: No further analysis performed.)
+ 12. Clock Domain u0|dut|intel_pcie_gts_0_avmm_clock0 (Meets timing requirements: No further analysis performed.)
+ 13. Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|dut|intel_pcie_gts_0_avmm_clock0 (Meets timing requirements: No further analysis performed.)
+ 14. Transfer from u0|iopll0|iopll_0_outclk1 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+ 15. Transfer from u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+ 16. Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 (Meets timing requirements: No further analysis performed.)
+ 17. Hyper-Retimer INI Usage
+ 18. Retime Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------+
+; Hyper-Retimer Settings                           ;
++------------------------+---------+---------------+
+; Option                 ; Setting ; Default Value ;
++------------------------+---------+---------------+
+; Enable Auto-Pipelining ; On      ; On            ;
++------------------------+---------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Reset Sequence Requirement                                                                                      ;
++-----------------------------------------------------------------------------------+-----------------------------+
+; Clock Name                                                                        ; Number of additional cycles ;
++-----------------------------------------------------------------------------------+-----------------------------+
+; u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk_ref                                ; 0                           ;
+; u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk_reg                                ; 0                           ;
+; u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk                                    ; 2                           ;
+; u0|dut|intel_pcie_gts_0_avmm_clock0                                               ; 0                           ;
+; internal_clk                                                                      ; 0                           ;
+; u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div1 ; 0                           ;
+; u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 ; 2                           ;
+; u0|iopll0|iopll_0_refclk                                                          ; 0                           ;
+; u0|iopll0|iopll_0|tennm_ph2_iopll|ref_clk0                                        ; 0                           ;
+; u0|iopll0|iopll_0_n_cnt_clk                                                       ; 0                           ;
+; u0|iopll0|iopll_0_m_cnt_clk                                                       ; 0                           ;
+; u0|iopll0|iopll_0_outclk0                                                         ; 0                           ;
+; u0|iopll0|iopll_0_outclk1                                                         ; 0                           ;
++-----------------------------------------------------------------------------------+-----------------------------+
+Note: Due to retiming optimizations, a clock domain may require a longer reset sequence to ensure correct functionality.  The table above indicates the minimum number of additional reset sequence cycles needed for each clock domain.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Retiming Limit Summary                                                                                                                                                                                                                                                                                                                            ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Clock Transfer                                                                                                                                    ; Limiting Reason                                           ; Recommendation                                                                                                                    ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Transfer from internal_clk to u0|iopll0|iopll_0_outclk1                                                                                           ; Short Path/Long Path                                      ; See the Fast Forward Timing Closure Recommendations report for step-by-step suggestions for RTL changes and estimated performance ;
+; Clock Domain u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk                                                                                       ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Clock Domain u0|iopll0|iopll_0_outclk1                                                                                                            ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|iopll0|iopll_0_outclk1                                                         ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|dut|intel_pcie_gts_0_avmm_clock0 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk                                               ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Clock Domain u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2                                                    ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|iopll0|iopll_0_outclk1 to u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2                      ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Clock Domain u0|dut|intel_pcie_gts_0_avmm_clock0                                                                                                  ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|dut|intel_pcie_gts_0_avmm_clock0                                               ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|iopll0|iopll_0_outclk1 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk                                                         ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
+; Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 ; Meets timing requirements: No further analysis performed. ; None                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+
+
+Critical Chain Summary for Transfer from internal_clk to u0|iopll0|iopll_0_outclk1
+===============================================================================
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recommendations for Critical Chain                                                                                                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recommendation                                                                                                                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; The critical chain is limited by: Short Path/Long Path                                                                                                                                                                                                             ;
+;                                                                                                                                                                                                                                                                    ;
+; Reduce the delay of 'Long Paths' in the chain                                                                                                                                                                                                                      ;
+;   or insert more pipeline stages for 'Long Paths' in the chain                                                                                                                                                                                                     ;
+;   or remove retiming restrictions                                                                                                                                                                                                                                  ;
+;    or increase the delay (or add pipeline stages) to 'Short Paths' in the chain                                                                                                                                                                                    ;
+;    Refer to <a href='https://www.intel.com/content/www/us/en/docs/programmable/683353/current/short-path-long-path.html'>Short Path / Long Path</a> in the <i>Intel Hyperflex Architecture High-Performance Design Handbook</i> for more information.              ;
+;                                                                                                                                                                                                                                                                    ;
+; Retiming Restriction: Boundary Port Restriction                                                                                                                                                                                                                    ;
+;  Unable to retime across boundary ports:                                                                                                                                                                                                                           ;
+;    auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_splitter_receive_0[0]                                                                                                                                                                                        ;
+;                                                                                                                                                                                                                                                                    ;
+; Retiming Restriction: Cross Partition Transfer Restriction                                                                                                                                                                                                         ;
+;  Unable to retime across nodes involved in cross-partition transfers:                                                                                                                                                                                              ;
+;    auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset                                                                                                                                                                      ;
+;    u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn                                                                                                                                                                                                                ;
+;                                                                                                                                                                                                                                                                    ;
+; Retiming Restriction: Metastability Synchronizer                                                                                                                                                                                                                   ;
+;  Add additional pipeline stages to isolate the register(s), to allow retiming optimizations to improve performance                                                                                                                                                 ;
+;  or set Synchronization Register Chain Length to 1 if evaluating IP module performance                                                                                                                                                                             ;
+;   u0|dut|intel_pcie_gts_0|u_pciess_p0|u_ss_rst_seq|gen_hs_req_sync[1].hs_req_sync|din_s1                                                                                                                                                                           ;
+;    Refer to <a href='https://www.intel.com/content/www/us/en/docs/programmable/683353/current/hyper-pipelining-add-pipeline-registers.html'>Hyper-Pipelining</a> in the <i>Intel Hyperflex Architecture High-Performance Design Handbook</i> for more information. ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Critical Chain Details                                                                                                                                                                 ;
++----------------------+------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------+
+; Path Info            ; Register                     ; Register ID ; Element                                                                                                            ;
++----------------------+------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------+
+; Long Path (Critical) ; REG (SDM)                    ; #1          ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg ;
+; Long Path (Critical) ;                              ;             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset|gpio_o                  ;
+; Long Path (Critical) ;                              ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_splitter_receive_0[0]|input                                     ;
+; Long Path (Critical) ;                              ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_splitter_receive_0[0]                                           ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn|datac                                                             ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn|combout                                                           ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_LAB_RE_X30_Y9_N0_I92                                             ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_LOCAL_INTERCONNECT_X30_Y9_N0_I5                                  ;
+; Long Path (Critical) ; Bypassed Hyper-Register      ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_BLOCK_INPUT_MUX_PASSTHROUGH_X30_Y9_N0_I59                        ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_LAB_RE_X30_Y9_N0_I63                                             ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch|datae                                                ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~cw_la_lab/laboutb[11]                                ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~LAB_RE_X30_Y9_N0_I120                                ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~R0_X30_Y9_N0_I52                                     ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~R0_X30_Y9_N0_I48                                     ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~R0_X30_Y9_N0_I29                                     ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~LOCAL_INTERCONNECT_X30_Y9_N0_I74                     ;
+; Long Path (Critical) ; Bypassed Hyper-Register      ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~BLOCK_INPUT_MUX_PASSTHROUGH_X30_Y9_N0_I61            ;
+; Long Path (Critical) ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~LAB_RE_X30_Y9_N0_I60                                 ;
+; Long Path (Critical) ;                              ;             ; u0|dut|intel_pcie_gts_0|u_pciess_p0|u_ss_rst_seq|gen_hs_req_sync[1].hs_req_sync|din_s1|d                           ;
+; Long Path (Critical) ; REG (Metastability required) ; #2          ; u0|dut|intel_pcie_gts_0|u_pciess_p0|u_ss_rst_seq|gen_hs_req_sync[1].hs_req_sync|din_s1                             ;
+; -------------------- ; ---------------------------- ; ----------- ; ------------------------------------------------------------------------------------------------------------------ ;
+; Short Path           ; REG (SDM)                    ; #1          ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset~internal_ctrl_clock.reg ;
+; Short Path           ;                              ;             ; auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|agilexconfigreset|user_reset|sdm_gpo_out_user_reset|gpio_o                  ;
+; Short Path           ;                              ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_splitter_receive_0[0]|input                                     ;
+; Short Path           ;                              ;             ; auto_fab_0|auto_export_alt_sld_fab_0_alt_sld_fab_0_splitter_receive_0[0]                                           ;
+; Short Path           ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn|datac                                                             ;
+; Short Path           ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn|combout                                                           ;
+; Short Path           ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_LAB_RE_X30_Y9_N0_I92                                             ;
+; Short Path           ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_LOCAL_INTERCONNECT_X30_Y9_N0_I5                                  ;
+; SDC Exception        ; Bypassed Hyper-Register      ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|i139~0xsyn~_BLOCK_INPUT_MUX_PASSTHROUGH_X30_Y9_N0_I59                        ;
+; SDC Exception        ; Bypassed Hyper-Register      ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~BLOCK_INPUT_MUX_PASSTHROUGH_X30_Y9_N0_I61            ;
+; Short Path           ; Bypassed Hyper-Register      ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~BLOCK_INPUT_MUX_PASSTHROUGH_X30_Y9_N0_I61            ;
+; Short Path           ;                              ;             ; u0|pio0|intel_pcie_pio_gts_0|rst_ctrl|subsystem_rst_req$latch~LAB_RE_X30_Y9_N0_I60                                 ;
+; Short Path           ;                              ;             ; u0|dut|intel_pcie_gts_0|u_pciess_p0|u_ss_rst_seq|gen_hs_req_sync[1].hs_req_sync|din_s1|d                           ;
+; Short Path           ; REG (Metastability required) ; #2          ; u0|dut|intel_pcie_gts_0|u_pciess_p0|u_ss_rst_seq|gen_hs_req_sync[1].hs_req_sync|din_s1                             ;
++----------------------+------------------------------+-------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+
+Clock Domain u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Clock Domain u0|iopll0|iopll_0_outclk1 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|iopll0|iopll_0_outclk1 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|dut|intel_pcie_gts_0_avmm_clock0 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Clock Domain u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|iopll0|iopll_0_outclk1 to u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Clock Domain u0|dut|intel_pcie_gts_0_avmm_clock0 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|dut|intel_pcie_gts_0_avmm_clock0 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|iopll0|iopll_0_outclk1 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 to u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
+Transfer from u0|dut|intel_pcie_gts_0|coreclkout_hip_pld_clk to u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 (Meets timing requirements: No further analysis performed.)
+===============================================================================
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hyper-Retimer INI Usage                                                                                                                                                                                                                                                                                                                                                                   ;
++----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option               ; Usage                                                                                                                                                                                                                                                                                                                                                              ;
++----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Initialization file: ; C:/projects/axe5_eagle/pcie/quartus.ini                                                                                                                                                                                                                                                                                                                            ;
+; dev_password0        ; b0fa39c9776827f49d7b4e8b1904c14a3ab2bd5c802ac4a85cfc9715f9c2ef4023227022333522262337122342002004517223232332650043055454475545                                                                                                                                                                                                                                     ;
+; dev_password1        ; d0070c637d8802a600c03785ce4b58a7ec51c7233056655ec0f93b614c992bc61e9061a18c23d613b2e03446a97416c3a81767754cdeb614f1f064a7ae706a008fa825e4fbc0848b09ae6e4619a8f2a88c2bf2fde932f961223361322432333723377200101475343420015001005142714001410305327055243255562556135532227545516555432222623260332332272010430052000005043430143010253004305544550041051754445447     ;
+; dev_password2        ; d0070c637d8802a600c03785ce4b58a7ec51c7233056914f0049153f75a86bf8030a85c4a964c63e8d72a17a0984484782f240e9fb12575a10e51496746b647fa5f740c00c6500c5c54683521758f2a52602757b11ed261d9122336132243233372337720010147534342001500104710000334100430004713354352251522172334522024551655544522262227022322230242153000143100401001010042030152430004455554001475555455644 ;
+; dev_password3        ; d0070c637d8467d216785497e7c00f870f7a1ae6099ea00000b06d2903fa92a5054416a3f621562b89e9584883845d2bf61b80ef2f900c90a56b9468c42b6010911e533294c6ee42185984b8e40f7caca4d2530591223361322422235600043455343030114531000042330000030105323154256155533552375526025545557545561222333222732270252010020153530000143014142430053000204551650010055514451645                 ;
+; dev_password4        ; d0070c637d8467d216785497e7c00f870f7a1a12185e102e5e895c693de70841606151b3db1ec4beb549a81607aeb80c6aac4c0e617119e094b18f66bb013f75b5e9f6b6da0a06af0c5774b8e9a5552b222a8cdae99122336132242223560004345534303011453104200042734042410004303255662254422556335102224555754551622233223262336032242112010010100111043410100010152020105165551101051554075444             ;
++----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------+
+; Retime Messages ;
++-----------------+
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 23.4.1 Build 205 02/08/2024 SC Pro Edition
+    Info: Processing started: Thu Mar 21 07:54:04 2024
+    Info: System process ID: 35712
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off pcie_example -c pcie_example
+Info: Using INI file C:/projects/axe5_eagle/pcie/quartus.ini
+Info: The application is running in 'DNI' mode.
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = pcie_example
+Info: Revision = pcie_example
+Info (17966): Starting Hyper-Retimer operations.
+Info (18914): The Hyper-Retimer was unable to optimize the design due to retiming restrictions. Run Fast Forward Timing Closure Recommendations to see step-by-step suggestions for design changes and show the estimated performance improvement from making these changes.
+Info (17968): Completed Hyper-Retimer operations.
+Info (18821): Fitter Hyper-Retimer operations ending: elapsed time is 00:00:10
+Warning (335091): The Timing Analyzer found 2 latches that cannot be analyzed as synchronous elements. For more details, run the Check Timing command in the Timing Analyzer to see the list of unsupported latches.
+Info: Following instance found in the design -  u0|rst_controller|*
+Info: Following instance found in the design -  u0|rst_controller_001|*
+Info: Following instance found in the design -  u0|rst_controller_002|*
+Info: TEST SOURCE FOUND u0|dut|intel_pcie_gts_0|gen_sm_qhip.u_sm_qhip|sm_pcie_hal_top_inst|pcie_hal_top|ch4_phip_inst|x_std_sm_hssi_pld_chnl_dp_0~syspll_c0.reg
+Info: Getting top level source clock from node _col113 => u0|iopll0|iopll_0|tennm_ph2_iopll~io96/m31_0_30__iopll_to_dcm__pllcout[0]
+Info: IP SDC: u0|srcssip|intel_srcss_gts_0
+Info: Constrained clock divider output clock u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div1 to u0|dut|intel_pcie_gts_0|gen_sm_qhip.u_sm_qhip|sm_pcie_hal_top_inst|pcie_hal_top|ch4_phip_inst|x_std_sm_hssi_pld_chnl_dp_0|o_hio_user_rx_clk1_clk.
+Info: Constrained clock divider output clock u0|pio0|intel_pcie_pio_gts_0|pio_clkCtrl|intel_pio_clkctrl|clkdiv_inst|clock_div2 to u0|dut|intel_pcie_gts_0|gen_sm_qhip.u_sm_qhip|sm_pcie_hal_top_inst|pcie_hal_top|ch4_phip_inst|x_std_sm_hssi_pld_chnl_dp_0|o_hio_user_rx_clk1_clk.
+
+

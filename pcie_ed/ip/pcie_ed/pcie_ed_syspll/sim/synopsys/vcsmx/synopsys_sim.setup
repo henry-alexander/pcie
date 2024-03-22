@@ -1,0 +1,16 @@
+
+WORK > DEFAULT
+DEFAULT:                  ./libraries/work/                    
+work:                     ./libraries/work/                    
+spll_hal_2100:            ./libraries/spll_hal_2100/           
+intel_systemclk_gts_200:  ./libraries/intel_systemclk_gts_200/ 
+pcie_ed_syspll:           ./libraries/pcie_ed_syspll/          
+altera_ver:               ./libraries/altera_ver/              
+lpm_ver:                  ./libraries/lpm_ver/                 
+sgate_ver:                ./libraries/sgate_ver/               
+altera_mf_ver:            ./libraries/altera_mf_ver/           
+altera_lnsim_ver:         ./libraries/altera_lnsim_ver/        
+tennm_hvio_ver:           ./libraries/tennm_hvio_ver/          
+tennm_agilex5_io96_ver:   ./libraries/tennm_agilex5_io96_ver/  
+tennm_sm_ver:             ./libraries/tennm_sm_ver/            
+tennm_agilex5_hssi_a_ver: ./libraries/tennm_agilex5_hssi_a_ver/

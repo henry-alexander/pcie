@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\projects\\axe5_eagle\\pcie\\software\\EaglePCIeDriver\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4FA8429-53C1-4ED9-8A20-F2BDF25877C4}|EaglePCIeDriver.vcxproj|C:\\projects\\axe5_eagle\\pcie\\software\\EaglePCIeDriver\\Driver.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4FA8429-53C1-4ED9-8A20-F2BDF25877C4}|EaglePCIeDriver.vcxproj|solutionrelative:Driver.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Driver.c",
+              "DocumentMoniker": "C:\\projects\\axe5_eagle\\pcie\\software\\EaglePCIeDriver\\Driver.c",
+              "RelativeDocumentMoniker": "Driver.c",
+              "ToolTip": "C:\\projects\\axe5_eagle\\pcie\\software\\EaglePCIeDriver\\Driver.c",
+              "RelativeToolTip": "Driver.c",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-22T20:51:02.555Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# system info pcie_ed_syspll on 2024.03.20.07:24:42
+system_info:
+name,value
+DEVICE,A5ED065BB32AE4SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for pcie_ed_syspll on 2024.03.20.07:24:42
+files:
+filepath,kind,attributes,module,is_top
+sim/pcie_ed_syspll.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,pcie_ed_syspll,true
+intel_systemclk_gts_200/sim/pcie_ed_syspll_intel_systemclk_gts_200_eathmmq.sv,SYSTEM_VERILOG,,pcie_ed_syspll_intel_systemclk_gts_200_eathmmq,false
+intel_systemclk_gts_200/sim/pcie_ed_syspll_intel_systemclk_gts_spll_hal_200_cc5u5ly.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,pcie_ed_syspll_intel_systemclk_gts_spll_hal_200_cc5u5ly,false
+spll_hal_2100/sim/spll_hal_top.sv,SYSTEM_VERILOG,,pcie_ed_syspll_spll_hal_2100_dlmglry,false
+spll_hal_2100/sim/pcie_ed_syspll_spll_hal_2100_dlmglry.sv,SYSTEM_VERILOG,,pcie_ed_syspll_spll_hal_2100_dlmglry,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+pcie_ed_syspll.intel_systemclk_gts_inst,pcie_ed_syspll_intel_systemclk_gts_200_eathmmq
+pcie_ed_syspll.intel_systemclk_gts_inst.spll_hal_top,pcie_ed_syspll_intel_systemclk_gts_spll_hal_200_cc5u5ly
+pcie_ed_syspll.intel_systemclk_gts_inst.spll_hal_top.spll_hal_top,pcie_ed_syspll_spll_hal_2100_dlmglry

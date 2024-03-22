@@ -1,0 +1,18 @@
+# system info pcie_ed_resetIP on 2024.03.20.07:24:41
+system_info:
+name,value
+DEVICE,A5ED065BB32AE4SR0
+DEVICE_FAMILY,Agilex 5
+GENERATION_ID,0
+#
+#
+# Files generated for pcie_ed_resetIP on 2024.03.20.07:24:41
+files:
+filepath,kind,attributes,module,is_top
+sim/pcie_ed_resetIP.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,pcie_ed_resetIP,true
+altera_s10_user_rst_clkgate_1947/sim/altera_s10_user_rst_clkgate.sv,SYSTEM_VERILOG,,altera_s10_user_rst_clkgate,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+pcie_ed_resetIP.resetIP,altera_s10_user_rst_clkgate

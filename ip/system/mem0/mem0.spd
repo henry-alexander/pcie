@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="intel_onchip_memory_147/sim/mem0_intel_onchip_memory_147_2eoow2i.sv"
+   type="SYSTEM_VERILOG"
+   library="intel_onchip_memory_147" />
+ <file
+   path="intel_onchip_memory_147/sim/mem0_mem0.hex"
+   type="HEX"
+   library="intel_onchip_memory_147" />
+ <file
+   path="sim/mem0.v"
+   type="VERILOG"
+   library="mem0"
+   hasInlineConfiguration="true" />
+ <topLevel name="mem0.mem0" />
+ <deviceFamily name="agilex5" />
+ <device name="A5ED065BB32AE4S" />
+ <modelMap controllerPath="mem0.mem0" modelPath="mem0.mem0" />
+</simPackage>

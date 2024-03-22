@@ -1,0 +1,9 @@
+22 serialization::archive 19 0 0 9 0 0 0 22 alt_sld_fab_0.sopcinfo 0 0 10 text_model 0 0 0 1 1 
+ 16 pcie_ed.sopcinfo 10 text_model 0 1 1 
+ 21 pcie_ed_MEM0.sopcinfo 10 text_model 0 1 1 
+ 20 pcie_ed_dut.sopcinfo 10 text_model 0 1 1 
+ 23 pcie_ed_iopll0.sopcinfo 10 text_model 0 1 1 
+ 21 pcie_ed_pio0.sopcinfo 10 text_model 0 1 1 
+ 24 pcie_ed_resetIP.sopcinfo 10 text_model 0 1 1 
+ 24 pcie_ed_srcssIP.sopcinfo 10 text_model 0 1 1 
+ 23 pcie_ed_syspll.sopcinfo 10 text_model 0 1 1 

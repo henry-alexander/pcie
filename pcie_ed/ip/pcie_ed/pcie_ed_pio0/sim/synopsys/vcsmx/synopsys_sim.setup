@@ -1,0 +1,16 @@
+
+WORK > DEFAULT
+DEFAULT:                  ./libraries/work/                    
+work:                     ./libraries/work/                    
+intelclkctrl_200:         ./libraries/intelclkctrl_200/        
+intel_pcie_pio_gts_234:   ./libraries/intel_pcie_pio_gts_234/  
+pcie_ed_pio0:             ./libraries/pcie_ed_pio0/            
+altera_ver:               ./libraries/altera_ver/              
+lpm_ver:                  ./libraries/lpm_ver/                 
+sgate_ver:                ./libraries/sgate_ver/               
+altera_mf_ver:            ./libraries/altera_mf_ver/           
+altera_lnsim_ver:         ./libraries/altera_lnsim_ver/        
+tennm_hvio_ver:           ./libraries/tennm_hvio_ver/          
+tennm_agilex5_io96_ver:   ./libraries/tennm_agilex5_io96_ver/  
+tennm_sm_ver:             ./libraries/tennm_sm_ver/            
+tennm_agilex5_hssi_a_ver: ./libraries/tennm_agilex5_hssi_a_ver/

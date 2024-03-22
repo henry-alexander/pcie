@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <window width="1549" height="925" x="1463" y="85" />
+ <systemtable
+   filter="All Interfaces"
+   showAvalonDomains="1"
+   showClockDomains="0"
+   showResetDomains="0">
+  <columns>
+   <connections preferredWidth="495" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Interface Protocols/Serial Lite,Existing IP Variants/C:/projects/axe5_eagle,Library/Interface Protocols/Transceiver PHY,Library/Interface Protocols/PCI Express,Existing IP Variants/C:/projects/axe5_eagle/pcie,Existing IP Variants/C:,Existing IP Variants/C:/projects/axe5_eagle/pcie/ip,Library/Interface Protocols/PCI Express/QSYS Example Designs,Project,Library/Interface Protocols/Interlaken,Library/Interface Protocols/JESD,Library/Interface Protocols/CPRI PHY,Library,Existing IP Variants/C:/projects,Library/Interface Protocols,Existing IP Variants/C:/projects/axe5_eagle/pcie/ip/system,Existing IP Variants,Library/Interface Protocols/Ethernet" />
+ <generation path="" block_symbol_file="0" simulation="VERILOG" modelsim="1" />
+ <hdlexample language="VERILOG" />
+</preferences>

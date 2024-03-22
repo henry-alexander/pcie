@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Mar 21 08:02:56 2024
+Quartus Prime Version : 23.4.1 Build 205 02/08/2024 SC Pro Edition
+Revision Name : pcie_example
+Top-level Entity Name : pcie_example_top
+Family : Agilex 5
+Device : A5ED065BB32AE4S
+Timing Models : Preliminary
+Power Models : Preliminary
+Device Status : Advance
+Logic utilization (in ALMs) : 10,598 / 222,400 ( 5 % )
+Total dedicated logic registers : 27713
+Total pins : 38 / 624 ( 6 % )
+Total block memory bits : 1,071,912 / 32,993,280 ( 3 % )
+Total RAM Blocks : 186 / 1,611 ( 12 % )
+Total DSP Blocks : 0 / 846 ( 0 % )
+Total GTS Transceiver Channels : 4 / 24 ( 17 % )
+Total HSSI Ethernet Channels : 0 / 6 ( 0 % )
+Total HSSI PCIEs : 1 / 6 ( 17 % )
+Total HSSI HPS : 0 / 1 ( 0 % )
+Total PLLs : 1 / 15 ( 7 % )
