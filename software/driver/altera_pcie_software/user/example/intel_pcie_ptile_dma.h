@@ -1,0 +1,5 @@
+#ifndef INTEL_PCIE_PTILE_DMA_H
+#define INTEL_PCIE_PTILE_DMA_H
+
+#define __PTILE_PCIE_USED        1
+#endif /* INTEL_PCIE_PTILE_DMA_H */

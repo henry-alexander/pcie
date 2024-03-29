@@ -92,3 +92,4 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to PCIE_RSTb -entity p
 set_location_assignment PIN_CK134 -to FPGA_RST_n
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FPGA_RST_n -entity pcie_example_top
 set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to REFCLK_3B0_p -entity pcie_example_top
+set_global_assignment -name IP_FILE ip/system/system_pio_0.ip
