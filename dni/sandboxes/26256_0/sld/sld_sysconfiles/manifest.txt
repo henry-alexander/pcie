@@ -1,9 +1,0 @@
-22 serialization::archive 19 0 0 9 0 0 0 22 alt_sld_fab_0.sopcinfo 0 0 10 text_model 0 0 0 1 1 
- 13 mem0.sopcinfo 10 text_model 0 1 1 
- 16 resetIP.sopcinfo 10 text_model 0 1 1 
- 15 system.sopcinfo 10 text_model 0 1 1 
- 32 system_intel_pcie_gts_0.sopcinfo 10 text_model 0 1 1 
- 36 system_intel_pcie_pio_gts_0.sopcinfo 10 text_model 0 1 1 
- 33 system_intel_srcss_gts_0.sopcinfo 10 text_model 0 1 1 
- 37 system_intel_systemclk_gts_0.sopcinfo 10 text_model 0 1 1 
- 23 system_iopll_0.sopcinfo 10 text_model 0 1 1 
