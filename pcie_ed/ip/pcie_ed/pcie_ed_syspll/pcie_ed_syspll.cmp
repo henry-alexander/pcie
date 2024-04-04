@@ -1,8 +1,0 @@
-	component pcie_ed_syspll is
-		port (
-			o_pll_lock  : out std_logic;        -- o_pll_lock
-			o_syspll_c0 : out std_logic;        -- clk
-			i_refclk    : in  std_logic := 'X'  -- clk
-		);
-	end component pcie_ed_syspll;
-

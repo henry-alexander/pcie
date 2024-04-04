@@ -12,11 +12,11 @@
 // `define wHPS_LED1
 
 //`define wFAB_EMAC
-`define wRGB_LED0
-`define wRGB_LED1
-`define wRGB_LED2
-`define wRGB_LED3
-`define wFAB_PB
+// `define wRGB_LED0
+// `define wRGB_LED1
+// `define wRGB_LED2
+// `define wRGB_LED3
+// `define wFAB_PB
 // `define wFAB_DIPSW
 // `define wFAB_I2C1
 // `define wFAB_QSPI
@@ -215,8 +215,10 @@ module pcie_example_top (
 	
 //    input         SFP_REFCLK_p, SFP_REFCLK_n,
 
-   input         REFCLK_3B0_p, // REFCLK_3B0_n,
-   input         FPGA_RST_n
+   input         REFCLK_3B0_p // REFCLK_3B0_n,
+   // input         FPGA_RST_n
+
+
 //    inout         PWR_SDA,
 //    inout         PWR_SCL,
 //    input         SDM_CLK_25MHz,
@@ -283,7 +285,6 @@ module pcie_example_top (
 //   assign pcie_100M_clk_n = PCIE_100M_CK_n;
 
    assign pcie_perst_n = PCIE_RSTb;
-
    assign PER_p = pcie_tx_p;
    assign PER_n = pcie_tx_n;
    assign pcie_rx_p = PET_p;
@@ -312,8 +313,9 @@ module pcie_example_top (
         .dut_hip_serial_rx_p_in3                                  (pcie_rx_p[3]),                                  //   input,  width = 1,                                .rx_p_in3
         .dut_hip_serial_tx_n_out3                                 (pcie_tx_n[3]),                                 //  output,  width = 1,                                .tx_n_out3
         .dut_hip_serial_tx_p_out3                                 (pcie_tx_p[3]),                                 //  output,  width = 1,                                .tx_p_out3
-        .dut_pin_perst_n_reset_n                                  (pcie_perst_n),                                  //   input,  width = 1,                 dut_pin_perst_n.reset_n
-        // .dut_i_gpio_perst0_n_reset_n                              (),                              //   input,  width = 1,             dut_i_gpio_perst0_n.reset_n
+        .dut_p0_pin_perst_n_i_reset_n                             (),                                  //   input,  width = 1,                 dut_pin_perst_n.reset_n
+        .dut_i_gpio_perst0_n_reset_n                              (pcie_perst_n),
+        .dut_p0_pin_perst_n_reset_n                               (),         //  output,  width = 1,   dut_p0_pin_perst_n.reset_n                              //   input,  width = 1,             dut_i_gpio_perst0_n.reset_n
         // .dut_p0_ss_app_serr                                       (),                           //  output,  width = 1,              dut_p0_ss_app_serr.ss_app_serr
         // .dut_p0_ss_app_dlup                                       (),                           //  output,  width = 1,              dut_p0_ss_app_dlup.ss_app_dlup
         // .dut_p0_ss_app_linkup                                     (),                       //  output,  width = 1,            dut_p0_ss_app_linkup.ss_app_linkup

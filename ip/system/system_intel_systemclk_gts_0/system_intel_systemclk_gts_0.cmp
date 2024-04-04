@@ -1,8 +1,0 @@
-	component system_intel_systemclk_gts_0 is
-		port (
-			o_pll_lock  : out std_logic;        -- o_pll_lock
-			o_syspll_c0 : out std_logic;        -- clk
-			i_refclk    : in  std_logic := 'X'  -- clk
-		);
-	end component system_intel_systemclk_gts_0;
-

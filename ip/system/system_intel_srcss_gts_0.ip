@@ -16,14 +16,14 @@ https://fpgasoftware.intel.com/eula.-->
   <ipxact:vendor>Intel Corporation</ipxact:vendor>
   <ipxact:library>system_intel_srcss_gts_0</ipxact:library>
   <ipxact:name>intel_srcss_gts_0</ipxact:name>
-  <ipxact:version>2.0.0</ipxact:version>
+  <ipxact:version>3.0.0</ipxact:version>
   <ipxact:busInterfaces>
     <ipxact:busInterface>
       <ipxact:name>o_pma_cu_clk</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="23.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="24.1"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="23.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="24.1"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -81,7 +81,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:fileSetRef>
           <ipxact:localName>QUARTUS_SYNTH</ipxact:localName>
         </ipxact:fileSetRef>
-        <ipxact:parameters></ipxact:parameters>
       </ipxact:componentInstantiation>
     </ipxact:instantiations>
     <ipxact:ports>
@@ -89,7 +88,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:name>o_pma_cu_clk</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
-          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC_VECTOR</ipxact:typeName>
@@ -105,23 +103,23 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:vendor>Intel Corporation</ipxact:vendor>
       <ipxact:library>system_intel_srcss_gts_0</ipxact:library>
       <ipxact:name>intel_srcss_gts</ipxact:name>
-      <ipxact:version>2.0.0</ipxact:version>
+      <ipxact:version>3.0.0</ipxact:version>
     </altera:entity_info>
     <altera:altera_module_parameters>
       <ipxact:parameters>
         <ipxact:parameter parameterId="SRC_RS_DISABLE" type="bit">
           <ipxact:name>SRC_RS_DISABLE</ipxact:name>
-          <ipxact:displayName>Enable PCIe only design</ipxact:displayName>
+          <ipxact:displayName>Enable PCIE and/or HPS USB3.1 only design</ipxact:displayName>
           <ipxact:value>true</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="NUM_LANES_SHORELINE" type="int">
           <ipxact:name>NUM_LANES_SHORELINE</ipxact:name>
-          <ipxact:displayName>Number of Lane</ipxact:displayName>
+          <ipxact:displayName>Number of Reset Sequencer Lane(s)</ipxact:displayName>
           <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="NUM_BANKS_SHORELINE" type="int">
           <ipxact:name>NUM_BANKS_SHORELINE</ipxact:name>
-          <ipxact:displayName>Number of Bank</ipxact:displayName>
+          <ipxact:displayName>Number of Bank(s)</ipxact:displayName>
           <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
       </ipxact:parameters>
@@ -158,16 +156,13 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>bonusData</ipxact:displayName>
           <ipxact:value>bonusData 
 {
-   element $system
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Agilex 5";
-         type = "String";
-      }
-   }
    element intel_srcss_gts_0
    {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
    }
 }
 </ipxact:value>
@@ -233,6 +228,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="dflBitArray" type="string">
           <ipxact:name>dflBitArray</ipxact:name>
           <ipxact:displayName>dflBitArray</ipxact:displayName>
+          <ipxact:value></ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="cpuInfo" type="string">
+          <ipxact:name>cpuInfo</ipxact:name>
+          <ipxact:displayName>cpuInfo</ipxact:displayName>
           <ipxact:value></ipxact:value>
         </ipxact:parameter>
       </ipxact:parameters>

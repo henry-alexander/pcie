@@ -1,6 +1,0 @@
-	component system_intel_srcss_gts_0 is
-		port (
-			o_pma_cu_clk : out std_logic_vector(0 downto 0)   -- clk
-		);
-	end component system_intel_srcss_gts_0;
-

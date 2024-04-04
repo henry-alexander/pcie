@@ -1,4 +1,0 @@
-22 serialization::archive 19 9 721472768 50 Version 23.4.1 Build 205 02/08/2024 SC Pro Edition 0 0 3 0 0 0 18 dms:property:hpath 0 0 1 0
-0 5 29 instance::pcie_ed::auto_fab_0 20 dms:property:db_name
-1 5 10 auto_fab_0 22 dms:property:parent_db
-2 5 14 root_partition

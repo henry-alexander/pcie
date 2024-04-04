@@ -16,14 +16,14 @@ https://fpgasoftware.intel.com/eula.-->
   <ipxact:vendor>Intel Corporation</ipxact:vendor>
   <ipxact:library>system_intel_systemclk_gts_0</ipxact:library>
   <ipxact:name>intel_systemclk_gts_0</ipxact:name>
-  <ipxact:version>2.0.0</ipxact:version>
+  <ipxact:version>4.0.0</ipxact:version>
   <ipxact:busInterfaces>
     <ipxact:busInterface>
       <ipxact:name>o_pll_lock</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="23.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="24.1"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="23.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="24.1"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -67,10 +67,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>o_syspll_c0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="23.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="24.1"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="23.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="24.1"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -124,10 +124,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>refclk_xcvr</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="23.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="24.1"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="23.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="24.1"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -185,7 +185,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:fileSetRef>
           <ipxact:localName>QUARTUS_SYNTH</ipxact:localName>
         </ipxact:fileSetRef>
-        <ipxact:parameters></ipxact:parameters>
       </ipxact:componentInstantiation>
     </ipxact:instantiations>
     <ipxact:ports>
@@ -193,7 +192,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:name>o_pll_lock</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
-          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -206,7 +204,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:name>o_syspll_c0</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
-          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -219,7 +216,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:name>i_refclk</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
-          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -235,7 +231,7 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:vendor>Intel Corporation</ipxact:vendor>
       <ipxact:library>system_intel_systemclk_gts_0</ipxact:library>
       <ipxact:name>intel_systemclk_gts</ipxact:name>
-      <ipxact:version>2.0.0</ipxact:version>
+      <ipxact:version>4.0.0</ipxact:version>
     </altera:entity_info>
     <altera:altera_module_parameters>
       <ipxact:parameters>
@@ -243,6 +239,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:name>syspll_use_case</ipxact:name>
           <ipxact:displayName>Use case of System PLL</ipxact:displayName>
           <ipxact:value>TRANSCEIVER_USE_CASE</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="ch_pldif_channel_identifier" type="string">
+          <ipxact:name>ch_pldif_channel_identifier</ipxact:name>
+          <ipxact:displayName>Core Interface</ipxact:displayName>
+          <ipxact:value>PLD_CHANNEL_IDENTIFIER_GENERIC</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="syspll_mod_0" type="string">
           <ipxact:name>syspll_mod_0</ipxact:name>
@@ -323,16 +324,13 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>bonusData</ipxact:displayName>
           <ipxact:value>bonusData 
 {
-   element $system
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Agilex 5";
-         type = "String";
-      }
-   }
    element intel_systemclk_gts_0
    {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
    }
 }
 </ipxact:value>
@@ -497,6 +495,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="dflBitArray" type="string">
           <ipxact:name>dflBitArray</ipxact:name>
           <ipxact:displayName>dflBitArray</ipxact:displayName>
+          <ipxact:value></ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="cpuInfo" type="string">
+          <ipxact:name>cpuInfo</ipxact:name>
+          <ipxact:displayName>cpuInfo</ipxact:displayName>
           <ipxact:value></ipxact:value>
         </ipxact:parameter>
       </ipxact:parameters>

@@ -1,6 +1,0 @@
-	component resetIP is
-		port (
-			ninit_done : out std_logic   -- reset
-		);
-	end component resetIP;
-
