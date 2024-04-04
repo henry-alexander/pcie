@@ -1,8 +1,14 @@
+# ignore everything
 *
-
+# include only the files needed for quartus to compile the design
 !*.qpf
+!*.qsf
 !*.qsys
-!software/*
 !sources/*
 !/ip/system/*.ip
+
+# Make sure to remove any backup files
 *.BAK*
+
+# Include needed software
+!software/*
