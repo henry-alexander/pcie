@@ -321,7 +321,7 @@ module pcie_example_top (
         .dut_p0_ss_app_serr_ss_app_serr     								(),     //  output,  width = 1,   dut_p0_ss_app_serr.ss_app_serr
         .dut_p0_ss_app_dlup_ss_app_dlup     								(),     //  output,  width = 1,   dut_p0_ss_app_dlup.ss_app_dlup
         .dut_p0_ss_app_linkup_ss_app_linkup 								(), //  output,  width = 1, dut_p0_ss_app_linkup.ss_app_linkup
-        .iopll0_refclk_clk                                        (REFCLK_3B0_p),                                        //   input,  width = 1,                   iopll0_refclk.clk
+//        .iopll0_refclk_clk                                        (REFCLK_3B0_p),                                        //   input,  width = 1,                   iopll0_refclk.clk
         .refclk_xcvr_clk                                          (pcie_100M_clk_p)                                           //   input,  width = 1,                     refclk_xcvr.clk
     );
 

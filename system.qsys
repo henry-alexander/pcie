@@ -235,18 +235,6 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:value>&lt;systemInfosDefinition&gt;
     &lt;connPtSystemInfos&gt;
         &lt;entry&gt;
-            &lt;key&gt;clock_bridge_0_in_clk&lt;/key&gt;
-            &lt;value&gt;
-                &lt;connectionPointName&gt;clock_bridge_0_in_clk&lt;/connectionPointName&gt;
-                &lt;suppliedSystemInfos&gt;
-                    &lt;entry&gt;
-                        &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                    &lt;/entry&gt;
-                &lt;/suppliedSystemInfos&gt;
-                &lt;consumedSystemInfos/&gt;
-            &lt;/value&gt;
-        &lt;/entry&gt;
-        &lt;entry&gt;
             &lt;key&gt;sys_clock&lt;/key&gt;
             &lt;value&gt;
                 &lt;connectionPointName&gt;sys_clock&lt;/connectionPointName&gt;
@@ -9654,7 +9642,7 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:parameter parameterId="bspCpu" type="bit">
               <ipxact:name>bspCpu</ipxact:name>
               <ipxact:displayName>BSP CPU</ipxact:displayName>
-              <ipxact:value></ipxact:value>
+              <ipxact:value>false</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter parameterId="componentDefinition" type="string">
               <ipxact:name>componentDefinition</ipxact:name>
@@ -9789,7 +9777,7 @@ https://fpgasoftware.intel.com/eula.-->
     &lt;/boundary&gt;
     &lt;originalModuleInfo&gt;
         &lt;className&gt;intel_systemclk_gts&lt;/className&gt;
-        &lt;version&gt;2.0.0&lt;/version&gt;
+        &lt;version&gt;4.0.0&lt;/version&gt;
         &lt;displayName&gt;GTS System PLL Clocks Intel FPGA IP&lt;/displayName&gt;
     &lt;/originalModuleInfo&gt;
     &lt;systemInfoParameterDescriptors&gt;
@@ -10162,7 +10150,6 @@ https://fpgasoftware.intel.com/eula.-->
     <altera:hdl_parameter_mappings></altera:hdl_parameter_mappings>
     <altera:preserved_ports_for_debug></altera:preserved_ports_for_debug>
     <altera:altera_interface_boundary>
-      <altera:interface_mapping altera:name="sys_clock" altera:internal="clock_bridge_0.in_clk" altera:type="clock" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_hip_serial" altera:internal="dut.hip_serial" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_i_gpio_perst0_n" altera:internal="dut.i_gpio_perst0_n" altera:type="reset" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_p0_pin_perst_n" altera:internal="dut.p0_pin_perst_n" altera:type="reset" altera:dir="start"></altera:interface_mapping>
@@ -10172,6 +10159,7 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:interface_mapping altera:name="dut_p0_ss_app_serr" altera:internal="dut.p0_ss_app_serr" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_refclk0" altera:internal="dut.refclk0" altera:type="clock" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="refclk_xcvr" altera:internal="syspll_inst.refclk_xcvr" altera:type="clock" altera:dir="end"></altera:interface_mapping>
+      <altera:interface_mapping altera:name="sys_clock" altera:internal="clock_bridge_0.in_clk" altera:type="clock" altera:dir="end"></altera:interface_mapping>
     </altera:altera_interface_boundary>
     <ipxact:components>
       <ipxact:component>
@@ -10180,19 +10168,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:name>addressMap</ipxact:name>
         <ipxact:version>1.0</ipxact:version>
         <ipxact:busInterfaces>
-          <ipxact:busInterface>
-            <ipxact:name>mem0.s1</ipxact:name>
-            <ipxact:busType vendor="intel" library="intel" name="avalon" version="24.1"></ipxact:busType>
-          </ipxact:busInterface>
-          <ipxact:busInterface>
-            <ipxact:name>pio0.pio_master</ipxact:name>
-            <ipxact:busType vendor="intel" library="intel" name="avalon" version="24.1"></ipxact:busType>
-            <ipxact:master>
-              <ipxact:addressSpaceRef addressSpaceRef="pio0.pio_master">
-                <ipxact:baseAddress>0x0000_0000_0000_0000</ipxact:baseAddress>
-              </ipxact:addressSpaceRef>
-            </ipxact:master>
-          </ipxact:busInterface>
           <ipxact:busInterface>
             <ipxact:name>sysid_qsys_0.control_slave</ipxact:name>
             <ipxact:busType vendor="intel" library="intel" name="avalon" version="24.1"></ipxact:busType>
@@ -10206,18 +10181,21 @@ https://fpgasoftware.intel.com/eula.-->
               </ipxact:addressSpaceRef>
             </ipxact:master>
           </ipxact:busInterface>
+          <ipxact:busInterface>
+            <ipxact:name>mem0.s1</ipxact:name>
+            <ipxact:busType vendor="intel" library="intel" name="avalon" version="24.1"></ipxact:busType>
+          </ipxact:busInterface>
+          <ipxact:busInterface>
+            <ipxact:name>pio0.pio_master</ipxact:name>
+            <ipxact:busType vendor="intel" library="intel" name="avalon" version="24.1"></ipxact:busType>
+            <ipxact:master>
+              <ipxact:addressSpaceRef addressSpaceRef="pio0.pio_master">
+                <ipxact:baseAddress>0x0000_0000_0000_0000</ipxact:baseAddress>
+              </ipxact:addressSpaceRef>
+            </ipxact:master>
+          </ipxact:busInterface>
         </ipxact:busInterfaces>
         <ipxact:addressSpaces>
-          <ipxact:addressSpace>
-            <ipxact:name>pio0.pio_master</ipxact:name>
-            <ipxact:segments>
-              <ipxact:segment>
-                <ipxact:name>mem0.s1</ipxact:name>
-                <ipxact:addressOffset>0x0000_0000_0000_0000</ipxact:addressOffset>
-                <ipxact:range>0x0000_0000_0000_4000</ipxact:range>
-              </ipxact:segment>
-            </ipxact:segments>
-          </ipxact:addressSpace>
           <ipxact:addressSpace>
             <ipxact:name>jtag_master_0.master</ipxact:name>
             <ipxact:segments>
@@ -10225,6 +10203,16 @@ https://fpgasoftware.intel.com/eula.-->
                 <ipxact:name>sysid_qsys_0.control_slave</ipxact:name>
                 <ipxact:addressOffset>0x0000_0000</ipxact:addressOffset>
                 <ipxact:range>0x0000_0008</ipxact:range>
+              </ipxact:segment>
+            </ipxact:segments>
+          </ipxact:addressSpace>
+          <ipxact:addressSpace>
+            <ipxact:name>pio0.pio_master</ipxact:name>
+            <ipxact:segments>
+              <ipxact:segment>
+                <ipxact:name>mem0.s1</ipxact:name>
+                <ipxact:addressOffset>0x0000_0000_0000_0000</ipxact:addressOffset>
+                <ipxact:range>0x0000_0000_0000_4000</ipxact:range>
               </ipxact:segment>
             </ipxact:segments>
           </ipxact:addressSpace>
