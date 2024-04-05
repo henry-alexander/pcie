@@ -296,6 +296,7 @@ module pcie_example_top (
 
 
     system u0 (
+		  .sys_clock_clk                      								(REFCLK_3B0_p),
         .dut_refclk0_clk                                          (pcie_clk_p),                                          //   input,  width = 1,                     dut_refclk0.clk
         .dut_hip_serial_rx_n_in0                                  (pcie_rx_n[0]),                                  //   input,  width = 1,                  dut_hip_serial.rx_n_in0
         .dut_hip_serial_rx_p_in0                                  (pcie_rx_p[0]),                                  //   input,  width = 1,                                .rx_p_in0
@@ -313,13 +314,13 @@ module pcie_example_top (
         .dut_hip_serial_rx_p_in3                                  (pcie_rx_p[3]),                                  //   input,  width = 1,                                .rx_p_in3
         .dut_hip_serial_tx_n_out3                                 (pcie_tx_n[3]),                                 //  output,  width = 1,                                .tx_n_out3
         .dut_hip_serial_tx_p_out3                                 (pcie_tx_p[3]),                                 //  output,  width = 1,                                .tx_p_out3
-        .dut_p0_pin_perst_n_i_reset_n                             (),                                  //   input,  width = 1,                 dut_pin_perst_n.reset_n
+		  // DO NOT USE dut_p0_pin_perst_n_i_reset_n FOR PERST RESET AT THIS TIME. There is an issue with the Engineering Silicon. This is fixed in later version of the silicon
+        .dut_p0_pin_perst_n_i_reset_n                             (),                                  				//   input,  width = 1,                 dut_pin_perst_n.reset_n 
         .dut_i_gpio_perst0_n_reset_n                              (pcie_perst_n),
         .dut_p0_pin_perst_n_reset_n                               (),         //  output,  width = 1,   dut_p0_pin_perst_n.reset_n                              //   input,  width = 1,             dut_i_gpio_perst0_n.reset_n
-        // .dut_p0_ss_app_serr                                       (),                           //  output,  width = 1,              dut_p0_ss_app_serr.ss_app_serr
-        // .dut_p0_ss_app_dlup                                       (),                           //  output,  width = 1,              dut_p0_ss_app_dlup.ss_app_dlup
-        // .dut_p0_ss_app_linkup                                     (),                       //  output,  width = 1,            dut_p0_ss_app_linkup.ss_app_linkup
-        // .dut_p0_ss_app_surprise_down_err                          (), //  output,  width = 1, dut_p0_ss_app_surprise_down_err.ss_app_surprise_down_err
+        .dut_p0_ss_app_serr_ss_app_serr     								(),     //  output,  width = 1,   dut_p0_ss_app_serr.ss_app_serr
+        .dut_p0_ss_app_dlup_ss_app_dlup     								(),     //  output,  width = 1,   dut_p0_ss_app_dlup.ss_app_dlup
+        .dut_p0_ss_app_linkup_ss_app_linkup 								(), //  output,  width = 1, dut_p0_ss_app_linkup.ss_app_linkup
         .iopll0_refclk_clk                                        (REFCLK_3B0_p),                                        //   input,  width = 1,                   iopll0_refclk.clk
         .refclk_xcvr_clk                                          (pcie_100M_clk_p)                                           //   input,  width = 1,                     refclk_xcvr.clk
     );
