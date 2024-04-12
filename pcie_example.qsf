@@ -68,3 +68,19 @@ set_global_assignment -name BOARD default
 set_global_assignment -name IP_FILE ip/system/system_master_0.ip
 set_global_assignment -name IP_FILE ip/system/system_clock_bridge_0.ip
 set_global_assignment -name IP_FILE ip/system/system_sysid_qsys_0.ip
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE sources/stp1.stp
+set_global_assignment -name SIGNALTAP_FILE sources/stp1.stp
+set_global_assignment -name IP_FILE ip/system/gpio0.ip
+set_location_assignment PIN_BR118 -to LED0B -comment IOBANK_5A
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED0B -entity pcie_example_top
+set_location_assignment PIN_CL125 -to LED0G -comment IOBANK_5A
+set_location_assignment PIN_CK125 -to LED0R -comment IOBANK_5A
+set_location_assignment PIN_CA118 -to LED1B -comment IOBANK_5A
+set_location_assignment PIN_BW118 -to LED1G -comment IOBANK_5A
+set_location_assignment PIN_CF118 -to LED1R -comment IOBANK_5A
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED0G -entity pcie_example_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED0R -entity pcie_example_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED1B -entity pcie_example_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED1G -entity pcie_example_top
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED1R -entity pcie_example_top

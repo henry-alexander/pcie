@@ -12,8 +12,8 @@
 // `define wHPS_LED1
 
 //`define wFAB_EMAC
-// `define wRGB_LED0
-// `define wRGB_LED1
+`define wRGB_LED0
+`define wRGB_LED1
 // `define wRGB_LED2
 // `define wRGB_LED3
 // `define wFAB_PB
@@ -242,7 +242,7 @@ module pcie_example_top (
    assign LED0R = rgb_led0[2];
    assign LED0G = rgb_led0[1];
    assign LED0B = rgb_led0[0];
-   assign rgb_led0 = 0;
+   // assign rgb_led0 = 0;
    `endif
 
    `ifdef wRGB_LED1
@@ -250,7 +250,7 @@ module pcie_example_top (
    assign LED1R = rgb_led1[2];
    assign LED1G = rgb_led1[1];
    assign LED1B = rgb_led1[0];
-   assign rgb_led1 = 0;
+   // assign rgb_led1 = 0;
    `endif
 
    `ifdef wRGB_LED2
@@ -258,7 +258,7 @@ module pcie_example_top (
    assign LED2R = rgb_led2[2];
    assign LED2G = rgb_led2[1];
    assign LED2B = rgb_led2[0];
-   assign rgb_led2 = 0;
+   // assign rgb_led2 = 0;
    `endif
    
    `ifdef wRGB_LED3
@@ -266,7 +266,7 @@ module pcie_example_top (
    assign LED3R = rgb_led3[2];
    assign LED3G = rgb_led3[1];
    assign LED3B = rgb_led3[0];
-   assign rgb_led3 = 0;
+   // assign rgb_led3 = 0;
    `endif
 
    `ifdef wPCIe
@@ -322,6 +322,8 @@ module pcie_example_top (
         .dut_p0_ss_app_dlup_ss_app_dlup     								(),     //  output,  width = 1,   dut_p0_ss_app_dlup.ss_app_dlup
         .dut_p0_ss_app_linkup_ss_app_linkup 								(), //  output,  width = 1, dut_p0_ss_app_linkup.ss_app_linkup
 //        .iopll0_refclk_clk                                        (REFCLK_3B0_p),                                        //   input,  width = 1,                   iopll0_refclk.clk
+        .gpio0_export                                             (rgb_led0),                               //  output,  width = 3,                    gpio0.export
+        .gpio1_export                                             (rgb_led1), 
         .refclk_xcvr_clk                                          (pcie_100M_clk_p)                                           //   input,  width = 1,                     refclk_xcvr.clk
     );
 

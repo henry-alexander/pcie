@@ -128,7 +128,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="addressSpan" type="string">
           <ipxact:name>addressSpan</ipxact:name>
           <ipxact:displayName>Address span</ipxact:displayName>
-          <ipxact:value>16384</ipxact:value>
+          <ipxact:value>65536</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="addressUnits" type="string">
           <ipxact:name>addressUnits</ipxact:name>
@@ -183,7 +183,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="explicitAddressSpan" type="string">
           <ipxact:name>explicitAddressSpan</ipxact:name>
           <ipxact:displayName>Explicit address span</ipxact:displayName>
-          <ipxact:value>16384</ipxact:value>
+          <ipxact:value>65536</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="holdTime" type="int">
           <ipxact:name>holdTime</ipxact:name>
@@ -471,7 +471,7 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:vectors>
             <ipxact:vector>
               <ipxact:left>0</ipxact:left>
-              <ipxact:right>7</ipxact:right>
+              <ipxact:right>9</ipxact:right>
             </ipxact:vector>
           </ipxact:vectors>
           <ipxact:wireTypeDefs>
@@ -589,7 +589,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="allowInSystemMemoryContentEditor" type="bit">
           <ipxact:name>allowInSystemMemoryContentEditor</ipxact:name>
           <ipxact:displayName>Enable In-System Memory Content Editor feature</ipxact:displayName>
-          <ipxact:value>false</ipxact:value>
+          <ipxact:value>true</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="blockType" type="string">
           <ipxact:name>blockType</ipxact:name>
@@ -634,12 +634,12 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="instanceID" type="string">
           <ipxact:name>instanceID</ipxact:name>
           <ipxact:displayName>Instance ID</ipxact:displayName>
-          <ipxact:value>NONE</ipxact:value>
+          <ipxact:value>MEM</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="memorySize" type="longint">
           <ipxact:name>memorySize</ipxact:name>
           <ipxact:displayName>Total memory size</ipxact:displayName>
-          <ipxact:value>16384</ipxact:value>
+          <ipxact:value>65536</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="clockEnable" type="bit">
           <ipxact:name>clockEnable</ipxact:name>
@@ -762,7 +762,7 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:parameters>
         <ipxact:parameter parameterId="embeddedsw.CMacro.ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR" type="string">
           <ipxact:name>embeddedsw.CMacro.ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR</ipxact:name>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.CONTENTS_INFO" type="string">
           <ipxact:name>embeddedsw.CMacro.CONTENTS_INFO</ipxact:name>
@@ -786,7 +786,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.INSTANCE_ID" type="string">
           <ipxact:name>embeddedsw.CMacro.INSTANCE_ID</ipxact:name>
-          <ipxact:value>NONE</ipxact:value>
+          <ipxact:value>MEM</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.NON_DEFAULT_INIT_FILE_ENABLED" type="string">
           <ipxact:name>embeddedsw.CMacro.NON_DEFAULT_INIT_FILE_ENABLED</ipxact:name>
@@ -810,7 +810,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.SIZE_VALUE" type="string">
           <ipxact:name>embeddedsw.CMacro.SIZE_VALUE</ipxact:name>
-          <ipxact:value>16384</ipxact:value>
+          <ipxact:value>65536</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.WRITABLE" type="string">
           <ipxact:name>embeddedsw.CMacro.WRITABLE</ipxact:name>
@@ -958,7 +958,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;name&gt;address&lt;/name&gt;
                     &lt;role&gt;address&lt;/role&gt;
                     &lt;direction&gt;Input&lt;/direction&gt;
-                    &lt;width&gt;8&lt;/width&gt;
+                    &lt;width&gt;10&lt;/width&gt;
                     &lt;lowerBound&gt;0&lt;/lowerBound&gt;
                     &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
                     &lt;terminationValue&gt;0&lt;/terminationValue&gt;
@@ -1041,7 +1041,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;addressSpan&lt;/key&gt;
-                        &lt;value&gt;16384&lt;/value&gt;
+                        &lt;value&gt;65536&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;addressUnits&lt;/key&gt;
@@ -1084,7 +1084,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;explicitAddressSpan&lt;/key&gt;
-                        &lt;value&gt;16384&lt;/value&gt;
+                        &lt;value&gt;65536&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;holdTime&lt;/key&gt;
@@ -1283,11 +1283,11 @@ https://fpgasoftware.intel.com/eula.-->
                 &lt;consumedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;ADDRESS_MAP&lt;/key&gt;
-                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='s1' start='0x0' end='0x4000' datawidth='512' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
+                        &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='s1' start='0x0' end='0x10000' datawidth='512' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;ADDRESS_WIDTH&lt;/key&gt;
-                        &lt;value&gt;14&lt;/value&gt;
+                        &lt;value&gt;16&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;MAX_SLAVE_DATA_WIDTH&lt;/key&gt;
@@ -1315,6 +1315,7 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:interface_mapping altera:name="clk1" altera:internal="mem0.clk1" altera:type="clock" altera:dir="end">
         <altera:port_mapping altera:name="clk" altera:internal="clk"></altera:port_mapping>
       </altera:interface_mapping>
+      <altera:interface_mapping altera:name="freeze_interface" altera:internal="mem0.freeze_interface"></altera:interface_mapping>
       <altera:interface_mapping altera:name="reset1" altera:internal="mem0.reset1" altera:type="reset" altera:dir="end">
         <altera:port_mapping altera:name="reset" altera:internal="reset"></altera:port_mapping>
       </altera:interface_mapping>
