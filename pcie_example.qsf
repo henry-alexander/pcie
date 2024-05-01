@@ -84,3 +84,4 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED0R -entity pcie_
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED1B -entity pcie_example_top
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED1G -entity pcie_example_top
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LED1R -entity pcie_example_top
+set_global_assignment -name SDC_FILE sources/SDC1.sdc

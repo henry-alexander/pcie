@@ -252,7 +252,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="syspll_mod_0" type="string">
           <ipxact:name>syspll_mod_0</ipxact:name>
           <ipxact:displayName>Mode of System PLL</ipxact:displayName>
-          <ipxact:value>PCIE_FREQ_300</ipxact:value>
+          <ipxact:value>PCIE_FREQ_350</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="syspll_freq_mhz_enable_0" type="bit">
           <ipxact:name>syspll_freq_mhz_enable_0</ipxact:name>
@@ -262,7 +262,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="syspll_freq_mhz_0" type="string">
           <ipxact:name>syspll_freq_mhz_0</ipxact:name>
           <ipxact:displayName>Output frequency C0</ipxact:displayName>
-          <ipxact:value>322.265625</ipxact:value>
+          <ipxact:value>350.000000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="syspll_freq_mhz_enable_1" type="bit">
           <ipxact:name>syspll_freq_mhz_enable_1</ipxact:name>
@@ -517,6 +517,7 @@ https://fpgasoftware.intel.com/eula.-->
       </ipxact:parameters>
     </altera:altera_system_parameters>
     <altera:altera_interface_boundary>
+      <altera:interface_mapping altera:name="i_refclk_rdy" altera:internal="intel_systemclk_gts_0.i_refclk_rdy"></altera:interface_mapping>
       <altera:interface_mapping altera:name="o_pll_lock" altera:internal="intel_systemclk_gts_0.o_pll_lock" altera:type="conduit" altera:dir="end">
         <altera:port_mapping altera:name="o_pll_lock" altera:internal="o_pll_lock"></altera:port_mapping>
       </altera:interface_mapping>

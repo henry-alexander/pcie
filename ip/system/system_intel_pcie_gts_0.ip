@@ -415,7 +415,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="clockRate" type="longint">
           <ipxact:name>clockRate</ipxact:name>
           <ipxact:displayName>Clock rate</ipxact:displayName>
-          <ipxact:value>300000000</ipxact:value>
+          <ipxact:value>350000000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="clockRateKnown" type="bit">
           <ipxact:name>clockRateKnown</ipxact:name>
@@ -39368,7 +39368,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="axi_st_clk_freq_user_hwtcl" type="string">
           <ipxact:name>axi_st_clk_freq_user_hwtcl</ipxact:name>
           <ipxact:displayName>AXI-ST Clock Frequency (in MHz)</ipxact:displayName>
-          <ipxact:value>300MHz</ipxact:value>
+          <ipxact:value>350MHz</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="MIF_DIRECTORY" type="string">
           <ipxact:name>MIF_DIRECTORY</ipxact:name>
@@ -39938,7 +39938,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="debug_toolkit_hwtcl" type="int">
           <ipxact:name>debug_toolkit_hwtcl</ipxact:name>
           <ipxact:displayName>Enable Debug Toolkit</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="enable_pciess_register_access_hwtcl" type="int">
           <ipxact:name>enable_pciess_register_access_hwtcl</ipxact:name>
@@ -39948,7 +39948,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="g4_pld_clkfreq_user_hwtcl" type="string">
           <ipxact:name>g4_pld_clkfreq_user_hwtcl</ipxact:name>
           <ipxact:displayName>PLD clock frequency</ipxact:displayName>
-          <ipxact:value>300MHz</ipxact:value>
+          <ipxact:value>350MHz</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="g3_pld_clkfreq_user_hwtcl" type="string">
           <ipxact:name>g3_pld_clkfreq_user_hwtcl</ipxact:name>
@@ -40193,7 +40193,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_pf0_bar0_type_user_hwtcl" type="string">
           <ipxact:name>core16_pf0_bar0_type_user_hwtcl</ipxact:name>
           <ipxact:displayName>BAR0 type</ipxact:displayName>
-          <ipxact:value>64-bit prefetchable memory</ipxact:value>
+          <ipxact:value>64-bit non-prefetchable memory</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_bar0_address_width_user_hwtcl" type="string">
           <ipxact:name>core16_pf0_bar0_address_width_user_hwtcl</ipxact:name>
@@ -41293,7 +41293,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_virtual_pf0_msi_enable_user_hwtcl" type="int">
           <ipxact:name>core16_virtual_pf0_msi_enable_user_hwtcl</ipxact:name>
           <ipxact:displayName>PF0 enable MSI</ipxact:displayName>
-          <ipxact:value>1</ipxact:value>
+          <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_virtual_pf1_msi_enable_user_hwtcl" type="int">
           <ipxact:name>core16_virtual_pf1_msi_enable_user_hwtcl</ipxact:name>
@@ -42318,12 +42318,12 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_pf0_pci_type0_device_id_hwtcl" type="int">
           <ipxact:name>core16_pf0_pci_type0_device_id_hwtcl</ipxact:name>
           <ipxact:displayName>Device ID</ipxact:displayName>
-          <ipxact:value>48879</ipxact:value>
+          <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_revision_id_hwtcl" type="int">
           <ipxact:name>core16_pf0_revision_id_hwtcl</ipxact:name>
           <ipxact:displayName>Revision ID</ipxact:displayName>
-          <ipxact:value>105</ipxact:value>
+          <ipxact:value>2</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_class_code_hwtcl" type="int">
           <ipxact:name>core16_pf0_class_code_hwtcl</ipxact:name>
@@ -42333,12 +42333,12 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_pf0_subsys_vendor_id_hwtcl" type="int">
           <ipxact:name>core16_pf0_subsys_vendor_id_hwtcl</ipxact:name>
           <ipxact:displayName>Subsystem Vendor ID</ipxact:displayName>
-          <ipxact:value>48879</ipxact:value>
+          <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_subsys_dev_id_hwtcl" type="int">
           <ipxact:name>core16_pf0_subsys_dev_id_hwtcl</ipxact:name>
           <ipxact:displayName>Subsystem Device ID</ipxact:displayName>
-          <ipxact:value>57005</ipxact:value>
+          <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_sriov_vf_device_id" type="int">
           <ipxact:name>core16_pf0_sriov_vf_device_id</ipxact:name>
@@ -46582,7 +46582,7 @@ Note: This register field is sticky.</ipxact:description>
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRate&lt;/key&gt;
-                        &lt;value&gt;300000000&lt;/value&gt;
+                        &lt;value&gt;350000000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -47629,7 +47629,7 @@ Note: This register field is sticky.</ipxact:description>
                 &lt;consumedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                        &lt;value&gt;300000000&lt;/value&gt;
+                        &lt;value&gt;350000000&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/consumedSystemInfos&gt;
             &lt;/value&gt;

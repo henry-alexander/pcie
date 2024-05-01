@@ -123,7 +123,7 @@ https://fpgasoftware.intel.com/eula.-->
       }
       datum baseAddress
       {
-         value = "65536";
+         value = "16384";
          type = "String";
       }
    }
@@ -1032,7 +1032,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;clockRate&lt;/key&gt;
-                            &lt;value&gt;300000000&lt;/value&gt;
+                            &lt;value&gt;350000000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -2133,7 +2133,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;suppliedSystemInfos&gt;
                         &lt;entry&gt;
                             &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                            &lt;value&gt;300000000&lt;/value&gt;
+                            &lt;value&gt;350000000&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/suppliedSystemInfos&gt;
                     &lt;consumedSystemInfos/&gt;
@@ -2540,7 +2540,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRate&lt;/key&gt;
-                        &lt;value&gt;300000000&lt;/value&gt;
+                        &lt;value&gt;350000000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -3729,7 +3729,7 @@ https://fpgasoftware.intel.com/eula.-->
             <ipxact:parameter parameterId="bspCpu" type="bit">
               <ipxact:name>bspCpu</ipxact:name>
               <ipxact:displayName>BSP CPU</ipxact:displayName>
-              <ipxact:value></ipxact:value>
+              <ipxact:value>false</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter parameterId="componentDefinition" type="string">
               <ipxact:name>componentDefinition</ipxact:name>
@@ -3925,7 +3925,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;clockRate&lt;/key&gt;
-                            &lt;value&gt;350000000&lt;/value&gt;
+                            &lt;value&gt;300000000&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -4006,7 +4006,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;suppliedSystemInfos&gt;
                         &lt;entry&gt;
                             &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                            &lt;value&gt;350000000&lt;/value&gt;
+                            &lt;value&gt;300000000&lt;/value&gt;
                         &lt;/entry&gt;
                     &lt;/suppliedSystemInfos&gt;
                     &lt;consumedSystemInfos/&gt;
@@ -4214,7 +4214,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRate&lt;/key&gt;
-                        &lt;value&gt;350000000&lt;/value&gt;
+                        &lt;value&gt;300000000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -5220,7 +5220,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;name&gt;address&lt;/name&gt;
                         &lt;role&gt;address&lt;/role&gt;
                         &lt;direction&gt;Input&lt;/direction&gt;
-                        &lt;width&gt;10&lt;/width&gt;
+                        &lt;width&gt;8&lt;/width&gt;
                         &lt;lowerBound&gt;0&lt;/lowerBound&gt;
                         &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
                         &lt;terminationValue&gt;0&lt;/terminationValue&gt;
@@ -5303,7 +5303,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;addressSpan&lt;/key&gt;
-                            &lt;value&gt;65536&lt;/value&gt;
+                            &lt;value&gt;16384&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;addressUnits&lt;/key&gt;
@@ -5346,7 +5346,7 @@ https://fpgasoftware.intel.com/eula.-->
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;explicitAddressSpan&lt;/key&gt;
-                            &lt;value&gt;65536&lt;/value&gt;
+                            &lt;value&gt;16384&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;holdTime&lt;/key&gt;
@@ -5567,11 +5567,11 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;suppliedSystemInfos&gt;
                         &lt;entry&gt;
                             &lt;key&gt;ADDRESS_MAP&lt;/key&gt;
-                            &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='s1' start='0x0' end='0x10000' datawidth='512' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
+                            &lt;value&gt;&amp;lt;address-map&amp;gt;&amp;lt;slave name='s1' start='0x0' end='0x4000' datawidth='512' /&amp;gt;&amp;lt;/address-map&amp;gt;&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;ADDRESS_WIDTH&lt;/key&gt;
-                            &lt;value&gt;16&lt;/value&gt;
+                            &lt;value&gt;14&lt;/value&gt;
                         &lt;/entry&gt;
                         &lt;entry&gt;
                             &lt;key&gt;MAX_SLAVE_DATA_WIDTH&lt;/key&gt;
@@ -5638,7 +5638,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;name&gt;address&lt;/name&gt;
                     &lt;role&gt;address&lt;/role&gt;
                     &lt;direction&gt;Input&lt;/direction&gt;
-                    &lt;width&gt;10&lt;/width&gt;
+                    &lt;width&gt;8&lt;/width&gt;
                     &lt;lowerBound&gt;0&lt;/lowerBound&gt;
                     &lt;vhdlType&gt;STD_LOGIC_VECTOR&lt;/vhdlType&gt;
                     &lt;terminationValue&gt;0&lt;/terminationValue&gt;
@@ -5721,7 +5721,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;addressSpan&lt;/key&gt;
-                        &lt;value&gt;65536&lt;/value&gt;
+                        &lt;value&gt;16384&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;addressUnits&lt;/key&gt;
@@ -5764,7 +5764,7 @@ https://fpgasoftware.intel.com/eula.-->
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;explicitAddressSpan&lt;/key&gt;
-                        &lt;value&gt;65536&lt;/value&gt;
+                        &lt;value&gt;16384&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;holdTime&lt;/key&gt;
@@ -6064,7 +6064,7 @@ https://fpgasoftware.intel.com/eula.-->
         &lt;/entry&gt;
         &lt;entry&gt;
             &lt;key&gt;embeddedsw.CMacro.SIZE_VALUE&lt;/key&gt;
-            &lt;value&gt;65536&lt;/value&gt;
+            &lt;value&gt;16384&lt;/value&gt;
         &lt;/entry&gt;
         &lt;entry&gt;
             &lt;key&gt;embeddedsw.CMacro.WRITABLE&lt;/key&gt;
@@ -12629,7 +12629,7 @@ https://fpgasoftware.intel.com/eula.-->
       </altera:connection>
       <altera:connection altera:kind="avalon" altera:version="24.1" altera:start="pio0.pio_master" altera:end="pio_0.s1">
         <altera:connection_parameter altera:parameter_name="arbitrationPriority" altera:parameter_value="1"></altera:connection_parameter>
-        <altera:connection_parameter altera:parameter_name="baseAddress" altera:parameter_value="0x00010000"></altera:connection_parameter>
+        <altera:connection_parameter altera:parameter_name="baseAddress" altera:parameter_value="0x4000"></altera:connection_parameter>
         <altera:connection_parameter altera:parameter_name="defaultConnection" altera:parameter_value="false"></altera:connection_parameter>
         <altera:connection_parameter altera:parameter_name="domainAlias" altera:parameter_value=""></altera:connection_parameter>
         <altera:connection_parameter altera:parameter_name="qsys_mm.burstAdapterImplementation" altera:parameter_value="GENERIC_CONVERTER"></altera:connection_parameter>
@@ -12651,7 +12651,9 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:connection altera:kind="axi4stream" altera:version="24.1" altera:start="dut.p0_st_rx" altera:end="pio0.rx_pio"></altera:connection>
       <altera:connection altera:kind="axi4stream" altera:version="24.1" altera:start="dut.p0_st_txcrdt" altera:end="pio0.tx_crdt_pio"></altera:connection>
       <altera:connection altera:kind="axi4stream" altera:version="24.1" altera:start="pio0.tx_pio" altera:end="dut.p0_st_tx"></altera:connection>
+      <altera:connection altera:kind="clock" altera:version="24.1" altera:start="dut.coreclkout_hip_toapp" altera:end="pio0.axi_st_clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="dut.coreclkout_hip_toapp" altera:end="pio0.clk"></altera:connection>
+      <altera:connection altera:kind="clock" altera:version="24.1" altera:start="dut.coreclkout_hip_toapp" altera:end="dut.p0_axi_st_clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="syspll_inst.o_syspll_c0" altera:end="dut.i_syspll_c0_clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="clock_bridge_0.out_clk" altera:end="jtag_master_0.clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="clock_bridge_0.out_clk" altera:end="sysid_qsys_0.clk"></altera:connection>
@@ -12659,8 +12661,6 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="clock_bridge_0.out_clk" altera:end="iopll0.refclk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="iopll0.outclk0" altera:end="pio0.axi_lite_clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="iopll0.outclk0" altera:end="dut.p0_axi_lite_clk"></altera:connection>
-      <altera:connection altera:kind="clock" altera:version="24.1" altera:start="iopll0.outclk1" altera:end="pio0.axi_st_clk"></altera:connection>
-      <altera:connection altera:kind="clock" altera:version="24.1" altera:start="iopll0.outclk1" altera:end="dut.p0_axi_st_clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="pio0.pio_master_clk" altera:end="pio_0.clk"></altera:connection>
       <altera:connection altera:kind="clock" altera:version="24.1" altera:start="pio0.pio_master_clk" altera:end="mem0.clk1"></altera:connection>
       <altera:connection altera:kind="conduit" altera:version="24.1" altera:start="dut.i_flux_clk" altera:end="srcssIP.o_pma_cu_clk">
@@ -12750,10 +12750,6 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:interface_mapping altera:name="dut_i_gpio_perst0_n" altera:internal="dut.i_gpio_perst0_n" altera:type="reset" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_p0_pin_perst_n" altera:internal="dut.p0_pin_perst_n" altera:type="reset" altera:dir="start"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_p0_pin_perst_n_i" altera:internal="dut.p0_pin_perst_n_i" altera:type="reset" altera:dir="end"></altera:interface_mapping>
-      <altera:interface_mapping altera:name="dut_p0_ss_app_dlup" altera:internal="dut.p0_ss_app_dlup" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
-      <altera:interface_mapping altera:name="dut_p0_ss_app_linkup" altera:internal="dut.p0_ss_app_linkup" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
-      <altera:interface_mapping altera:name="dut_p0_ss_app_ltssmstate" altera:internal="dut.p0_ss_app_ltssmstate" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
-      <altera:interface_mapping altera:name="dut_p0_ss_app_serr" altera:internal="dut.p0_ss_app_serr" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="dut_refclk0" altera:internal="dut.refclk0" altera:type="clock" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="gpio0" altera:internal="pio_0.external_connection" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
       <altera:interface_mapping altera:name="gpio1" altera:internal="pio_1.external_connection" altera:type="conduit" altera:dir="end"></altera:interface_mapping>
@@ -12824,11 +12820,11 @@ https://fpgasoftware.intel.com/eula.-->
               <ipxact:segment>
                 <ipxact:name>mem0.s1</ipxact:name>
                 <ipxact:addressOffset>0x0000_0000_0000_0000</ipxact:addressOffset>
-                <ipxact:range>0x0000_0000_0001_0000</ipxact:range>
+                <ipxact:range>0x0000_0000_0000_4000</ipxact:range>
               </ipxact:segment>
               <ipxact:segment>
                 <ipxact:name>pio_0.s1</ipxact:name>
-                <ipxact:addressOffset>0x0000_0000_0001_0000</ipxact:addressOffset>
+                <ipxact:addressOffset>0x0000_0000_0000_4000</ipxact:addressOffset>
                 <ipxact:range>0x0000_0000_0000_0020</ipxact:range>
               </ipxact:segment>
             </ipxact:segments>
