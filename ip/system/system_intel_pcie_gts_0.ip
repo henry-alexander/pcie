@@ -415,7 +415,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="clockRate" type="longint">
           <ipxact:name>clockRate</ipxact:name>
           <ipxact:displayName>Clock rate</ipxact:displayName>
-          <ipxact:value>300000000</ipxact:value>
+          <ipxact:value>350000000</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="clockRateKnown" type="bit">
           <ipxact:name>clockRateKnown</ipxact:name>
@@ -38319,6 +38319,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:fileSetRef>
           <ipxact:localName>QUARTUS_SYNTH</ipxact:localName>
         </ipxact:fileSetRef>
+        <ipxact:parameters></ipxact:parameters>
       </ipxact:componentInstantiation>
     </ipxact:instantiations>
     <ipxact:ports>
@@ -38326,6 +38327,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>refclk0</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38338,6 +38340,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>i_syspll_c0_clk</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38350,6 +38353,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>i_ss_vccl_syspll_locked</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38362,6 +38366,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>i_flux_clk</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38374,6 +38379,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_n_in0</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38386,6 +38392,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_p_in0</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38398,6 +38405,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_n_out0</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38410,6 +38418,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_p_out0</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38422,6 +38431,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_n_in1</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38434,6 +38444,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_p_in1</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38446,6 +38457,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_n_out1</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38458,6 +38470,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_p_out1</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38470,6 +38483,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_n_in2</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38482,6 +38496,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_p_in2</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38494,6 +38509,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_n_out2</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38506,6 +38522,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_p_out2</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38518,6 +38535,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_n_in3</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38530,6 +38548,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>rx_p_in3</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38542,6 +38561,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_n_out3</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38554,6 +38574,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>tx_p_out3</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38566,6 +38587,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_pin_perst_n_i</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38578,6 +38600,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>i_gpio_perst0_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38590,6 +38613,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>coreclkout_hip_toapp</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38602,6 +38626,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_pin_perst_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38614,6 +38639,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_reset_status_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38626,6 +38652,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>ninit_done</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38638,6 +38665,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_axi_st_clk</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38650,6 +38678,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_axi_lite_clk</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38662,6 +38691,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_axi_st_areset_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38674,6 +38704,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_axi_lite_areset_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38686,6 +38717,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_subsystem_cold_rst_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38698,6 +38730,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_subsystem_warm_rst_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38710,6 +38743,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_subsystem_cold_rst_ack_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38722,6 +38756,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_subsystem_warm_rst_ack_n</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38734,6 +38769,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_subsystem_rst_req</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38746,6 +38782,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_subsystem_rst_rdy</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38758,6 +38795,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_initiate_warmrst_req</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38770,6 +38808,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_initiate_rst_req_rdy</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38782,6 +38821,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_st_rx_tvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38794,6 +38834,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_st_rx_tready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38842,6 +38883,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_st_rx_tlast</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38854,6 +38896,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_st_tx_tvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38866,6 +38909,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_st_tx_tready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38914,6 +38958,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_st_tx_tlast</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38926,6 +38971,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_st_txcrdt_tvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38956,6 +39002,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_lite_csr_awvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38968,6 +39015,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_lite_csr_awready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -38998,6 +39046,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_lite_csr_wvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39010,6 +39059,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_lite_csr_wready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39058,6 +39108,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_lite_csr_bvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39070,6 +39121,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_lite_csr_bready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39100,6 +39152,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_lite_csr_arvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39112,6 +39165,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_lite_csr_arready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39142,6 +39196,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_lite_csr_rvalid</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39154,6 +39209,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_app_ss_lite_csr_rready</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>in</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39202,6 +39258,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_serr</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39214,6 +39271,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_dlup</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39226,6 +39284,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:name>p0_ss_app_linkup</ipxact:name>
         <ipxact:wire>
           <ipxact:direction>out</ipxact:direction>
+          <ipxact:vectors></ipxact:vectors>
           <ipxact:wireTypeDefs>
             <ipxact:wireTypeDef>
               <ipxact:typeName>STD_LOGIC</ipxact:typeName>
@@ -39309,7 +39368,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="axi_st_clk_freq_user_hwtcl" type="string">
           <ipxact:name>axi_st_clk_freq_user_hwtcl</ipxact:name>
           <ipxact:displayName>AXI-ST Clock Frequency (in MHz)</ipxact:displayName>
-          <ipxact:value>300MHz</ipxact:value>
+          <ipxact:value>350MHz</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="MIF_DIRECTORY" type="string">
           <ipxact:name>MIF_DIRECTORY</ipxact:name>
@@ -39879,7 +39938,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="debug_toolkit_hwtcl" type="int">
           <ipxact:name>debug_toolkit_hwtcl</ipxact:name>
           <ipxact:displayName>Enable Debug Toolkit</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="enable_pciess_register_access_hwtcl" type="int">
           <ipxact:name>enable_pciess_register_access_hwtcl</ipxact:name>
@@ -39889,7 +39948,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="g4_pld_clkfreq_user_hwtcl" type="string">
           <ipxact:name>g4_pld_clkfreq_user_hwtcl</ipxact:name>
           <ipxact:displayName>PLD clock frequency</ipxact:displayName>
-          <ipxact:value>300MHz</ipxact:value>
+          <ipxact:value>350MHz</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="g3_pld_clkfreq_user_hwtcl" type="string">
           <ipxact:name>g3_pld_clkfreq_user_hwtcl</ipxact:name>
@@ -40134,7 +40193,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_pf0_bar0_type_user_hwtcl" type="string">
           <ipxact:name>core16_pf0_bar0_type_user_hwtcl</ipxact:name>
           <ipxact:displayName>BAR0 type</ipxact:displayName>
-          <ipxact:value>64-bit prefetchable memory</ipxact:value>
+          <ipxact:value>64-bit non-prefetchable memory</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_bar0_address_width_user_hwtcl" type="string">
           <ipxact:name>core16_pf0_bar0_address_width_user_hwtcl</ipxact:name>
@@ -41234,7 +41293,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_virtual_pf0_msi_enable_user_hwtcl" type="int">
           <ipxact:name>core16_virtual_pf0_msi_enable_user_hwtcl</ipxact:name>
           <ipxact:displayName>PF0 enable MSI</ipxact:displayName>
-          <ipxact:value>1</ipxact:value>
+          <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_virtual_pf1_msi_enable_user_hwtcl" type="int">
           <ipxact:name>core16_virtual_pf1_msi_enable_user_hwtcl</ipxact:name>
@@ -42264,7 +42323,7 @@ Note: This register field is sticky.</ipxact:description>
         <ipxact:parameter parameterId="core16_pf0_revision_id_hwtcl" type="int">
           <ipxact:name>core16_pf0_revision_id_hwtcl</ipxact:name>
           <ipxact:displayName>Revision ID</ipxact:displayName>
-          <ipxact:value>1</ipxact:value>
+          <ipxact:value>2</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_class_code_hwtcl" type="int">
           <ipxact:name>core16_pf0_class_code_hwtcl</ipxact:name>
@@ -46107,6 +46166,14 @@ Note: This register field is sticky.</ipxact:description>
           <ipxact:displayName>bonusData</ipxact:displayName>
           <ipxact:value>bonusData 
 {
+   element $system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Agilex 5";
+         type = "String";
+      }
+   }
    element intel_pcie_gts_0
    {
       datum _sortIndex
@@ -46515,7 +46582,7 @@ Note: This register field is sticky.</ipxact:description>
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRate&lt;/key&gt;
-                        &lt;value&gt;300000000&lt;/value&gt;
+                        &lt;value&gt;350000000&lt;/value&gt;
                     &lt;/entry&gt;
                     &lt;entry&gt;
                         &lt;key&gt;clockRateKnown&lt;/key&gt;
@@ -47562,7 +47629,7 @@ Note: This register field is sticky.</ipxact:description>
                 &lt;consumedSystemInfos&gt;
                     &lt;entry&gt;
                         &lt;key&gt;CLOCK_RATE&lt;/key&gt;
-                        &lt;value&gt;300000000&lt;/value&gt;
+                        &lt;value&gt;350000000&lt;/value&gt;
                     &lt;/entry&gt;
                 &lt;/consumedSystemInfos&gt;
             &lt;/value&gt;

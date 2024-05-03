@@ -12,8 +12,8 @@
 // `define wHPS_LED1
 
 //`define wFAB_EMAC
-// `define wRGB_LED0
-// `define wRGB_LED1
+`define wRGB_LED0
+`define wRGB_LED1
 // `define wRGB_LED2
 // `define wRGB_LED3
 // `define wFAB_PB
@@ -239,18 +239,18 @@ module pcie_example_top (
 	
    `ifdef wRGB_LED0
 	wire [2:0] rgb_led0;
-   assign LED0R = rgb_led0[2];
-   assign LED0G = rgb_led0[1];
-   assign LED0B = rgb_led0[0];
-   assign rgb_led0 = 0;
+   assign LED0R = ~rgb_led0[2];
+   assign LED0G = ~rgb_led0[1];
+   assign LED0B = ~rgb_led0[0];
+   // assign rgb_led0 = 0;
    `endif
 
    `ifdef wRGB_LED1
 	wire [2:0] rgb_led1;
-   assign LED1R = rgb_led1[2];
-   assign LED1G = rgb_led1[1];
-   assign LED1B = rgb_led1[0];
-   assign rgb_led1 = 0;
+   assign LED1R = ~rgb_led1[2];
+   assign LED1G = ~rgb_led1[1];
+   assign LED1B = ~rgb_led1[0];
+   // assign rgb_led1 = 0;
    `endif
 
    `ifdef wRGB_LED2
@@ -258,7 +258,7 @@ module pcie_example_top (
    assign LED2R = rgb_led2[2];
    assign LED2G = rgb_led2[1];
    assign LED2B = rgb_led2[0];
-   assign rgb_led2 = 0;
+   // assign rgb_led2 = 0;
    `endif
    
    `ifdef wRGB_LED3
@@ -266,7 +266,7 @@ module pcie_example_top (
    assign LED3R = rgb_led3[2];
    assign LED3G = rgb_led3[1];
    assign LED3B = rgb_led3[0];
-   assign rgb_led3 = 0;
+   // assign rgb_led3 = 0;
    `endif
 
    `ifdef wPCIe
@@ -299,7 +299,7 @@ module pcie_example_top (
 		  .sys_clock_clk                      								(REFCLK_3B0_p),
         .dut_refclk0_clk                                          (pcie_clk_p),                                          //   input,  width = 1,                     dut_refclk0.clk
         .dut_hip_serial_rx_n_in0                                  (pcie_rx_n[0]),                                  //   input,  width = 1,                  dut_hip_serial.rx_n_in0
-        .dut_hip_serial_rx_p_in0                                  (pcie_rx_p[0]),                                  //   input,  width = 1,                                .rx_p_in0
+        .dut_hip_serial_rx_p_in0                                 (pcie_rx_p[0]),                                  //   input,  width = 1,                                .rx_p_in0
         .dut_hip_serial_tx_n_out0                                 (pcie_tx_n[0]),                                 //  output,  width = 1,                                .tx_n_out0
         .dut_hip_serial_tx_p_out0                                 (pcie_tx_p[0]),                                 //  output,  width = 1,                                .tx_p_out0
         .dut_hip_serial_rx_n_in1                                  (pcie_rx_n[1]),                                  //   input,  width = 1,                                .rx_n_in1
@@ -318,10 +318,12 @@ module pcie_example_top (
         .dut_p0_pin_perst_n_i_reset_n                             (),                                  				//   input,  width = 1,                 dut_pin_perst_n.reset_n 
         .dut_i_gpio_perst0_n_reset_n                              (pcie_perst_n),
         .dut_p0_pin_perst_n_reset_n                               (),         //  output,  width = 1,   dut_p0_pin_perst_n.reset_n                              //   input,  width = 1,             dut_i_gpio_perst0_n.reset_n
-        .dut_p0_ss_app_serr_ss_app_serr     								(),     //  output,  width = 1,   dut_p0_ss_app_serr.ss_app_serr
-        .dut_p0_ss_app_dlup_ss_app_dlup     								(),     //  output,  width = 1,   dut_p0_ss_app_dlup.ss_app_dlup
-        .dut_p0_ss_app_linkup_ss_app_linkup 								(), //  output,  width = 1, dut_p0_ss_app_linkup.ss_app_linkup
+      //   .dut_p0_ss_app_serr_ss_app_serr     								(),     //  output,  width = 1,   dut_p0_ss_app_serr.ss_app_serr
+      //   .dut_p0_ss_app_dlup_ss_app_dlup     								(),     //  output,  width = 1,   dut_p0_ss_app_dlup.ss_app_dlup
+      //   .dut_p0_ss_app_linkup_ss_app_linkup 								(), //  output,  width = 1, dut_p0_ss_app_linkup.ss_app_linkup
 //        .iopll0_refclk_clk                                        (REFCLK_3B0_p),                                        //   input,  width = 1,                   iopll0_refclk.clk
+        .gpio0_export                                             (rgb_led0),                               //  output,  width = 3,                    gpio0.export
+        .gpio1_export                                             (rgb_led1), 
         .refclk_xcvr_clk                                          (pcie_100M_clk_p)                                           //   input,  width = 1,                     refclk_xcvr.clk
     );
 

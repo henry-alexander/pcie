@@ -589,7 +589,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="allowInSystemMemoryContentEditor" type="bit">
           <ipxact:name>allowInSystemMemoryContentEditor</ipxact:name>
           <ipxact:displayName>Enable In-System Memory Content Editor feature</ipxact:displayName>
-          <ipxact:value>false</ipxact:value>
+          <ipxact:value>true</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="blockType" type="string">
           <ipxact:name>blockType</ipxact:name>
@@ -634,7 +634,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="instanceID" type="string">
           <ipxact:name>instanceID</ipxact:name>
           <ipxact:displayName>Instance ID</ipxact:displayName>
-          <ipxact:value>NONE</ipxact:value>
+          <ipxact:value>MEM</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="memorySize" type="longint">
           <ipxact:name>memorySize</ipxact:name>
@@ -762,7 +762,7 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:parameters>
         <ipxact:parameter parameterId="embeddedsw.CMacro.ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR" type="string">
           <ipxact:name>embeddedsw.CMacro.ALLOW_IN_SYSTEM_MEMORY_CONTENT_EDITOR</ipxact:name>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.CONTENTS_INFO" type="string">
           <ipxact:name>embeddedsw.CMacro.CONTENTS_INFO</ipxact:name>
@@ -786,7 +786,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.INSTANCE_ID" type="string">
           <ipxact:name>embeddedsw.CMacro.INSTANCE_ID</ipxact:name>
-          <ipxact:value>NONE</ipxact:value>
+          <ipxact:value>MEM</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="embeddedsw.CMacro.NON_DEFAULT_INIT_FILE_ENABLED" type="string">
           <ipxact:name>embeddedsw.CMacro.NON_DEFAULT_INIT_FILE_ENABLED</ipxact:name>
@@ -1315,6 +1315,7 @@ https://fpgasoftware.intel.com/eula.-->
       <altera:interface_mapping altera:name="clk1" altera:internal="mem0.clk1" altera:type="clock" altera:dir="end">
         <altera:port_mapping altera:name="clk" altera:internal="clk"></altera:port_mapping>
       </altera:interface_mapping>
+      <altera:interface_mapping altera:name="freeze_interface" altera:internal="mem0.freeze_interface"></altera:interface_mapping>
       <altera:interface_mapping altera:name="reset1" altera:internal="mem0.reset1" altera:type="reset" altera:dir="end">
         <altera:port_mapping altera:name="reset" altera:internal="reset"></altera:port_mapping>
       </altera:interface_mapping>
